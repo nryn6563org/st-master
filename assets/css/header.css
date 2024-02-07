@@ -15,3 +15,16 @@
 #header .txt{
   @apply w-full text-center text-[14px] text-[#0C0C20]
 }
+#sub_header{
+  @apply w-full h-[62px] bg-[#FFE500] p-[16px_12px] flex gap-3 items-center
+}
+#sub_header .back{}
+#sub_header .page-title{
+  @apply flex w-[calc(100%-36px)] justify-between
+}
+#sub_header .page-title span{
+  @apply text-[#0c0c20] font-ibm font-bold tracking-[-0.72px] text-[18px] leading-[30px]
+}
+#sub_header .page-title button{
+  @apply h-[30px] px-3 rounded-full border-[1px] border-[#0c0c20] flex items-center justify-center gap-[6px] text-[12px] text-[#0c0c20] font-medium
+}

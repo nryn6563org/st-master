@@ -7,7 +7,7 @@
   @apply font-pretendard
 }
 html,body{
-  @apply bg-[#f0f0f0] h-full
+  @apply h-full
 }
 #__nuxt,#__layout{
   @apply h-full
@@ -16,7 +16,10 @@ html,body{
   @apply h-full
 }
 #container{
-  @apply min-h-[calc(100%-212px)] pb-[60px]
+  @apply min-h-[calc(100%-212px)] pb-[60px] bg-[#f0f0f0]
+}
+#container.sub{
+  @apply min-h-[calc(100%-186px)] pb-[120px]
 }
 
 

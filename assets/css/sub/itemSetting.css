@@ -1,0 +1,29 @@
+#itemSetting{
+  @apply w-full relative
+}
+#itemSetting .top{
+  @apply bg-[#ffe500] w-full pt-1 pb-4 flex justify-center
+}
+#itemSetting .top button{
+  @apply h-[48px] w-[280px] flex justify-center items-center rounded-full bg-[#495062] gap-3 text-[16px] font-ibm font-semibold text-[#ffe500]
+}
+
+.my-item-list{
+  @apply w-full p-[32px_12px_48px] flex flex-col gap-3
+}
+.my-item-list .item{
+  @apply w-full bg-white border-[1px] border-[#dbdbdb] rounded-[10px] shadow-itemList p-[20px_24px] flex justify-between items-center
+}
+.my-item-list .item .name{
+  @apply font-ibm text-[16px] text-[#0c0c20] font-semibold
+}
+.my-item-list .item .name em{
+  @apply pl-[6px] text-[12px] font-medium font-pretendard text-[#919bab]
+}
+
+#itemSetting .btn-box{
+  @apply w-full flex justify-center px-3
+}
+#itemSetting .btn-box button{
+  @apply w-full flex justify-center items-center h-[56px] gap-[15px] text-[16px] font-ibm font-semibold text-white bg-[#495062]
+}

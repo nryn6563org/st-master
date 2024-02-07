@@ -1,96 +1,55 @@
 <template>
-  <section id="myitemsignal">
-    <div class="sub_title">
-      <span class="bullet">
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M5.00001 6.66667C5.00001 6.20643 5.3731 5.83333 5.83334 5.83333H10H14.1667C14.6269 5.83333 15 6.20643 15 6.66667C15 7.1269 14.6269 7.5 14.1667 7.5H5.83334C5.3731 7.5 5.00001 7.1269 5.00001 6.66667Z"
-            fill="#FFCE4F"
-          />
-          <path
-            d="M5.83334 9.16667C5.3731 9.16667 5.00001 9.53976 5.00001 10C5.00001 10.4602 5.3731 10.8333 5.83334 10.8333H9.16667C9.62691 10.8333 10 10.4602 10 10C10 9.53976 9.62691 9.16667 9.16667 9.16667H5.83334Z"
-            fill="#FFCE4F"
-          />
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M15 14.1667H16.6667C17.5871 14.1667 18.3333 13.4205 18.3333 12.5V4.16667C18.3333 3.24619 17.5871 2.5 16.6667 2.5H3.33334C2.41286 2.5 1.66667 3.24619 1.66667 4.16667V12.5C1.66667 13.4205 2.41286 14.1667 3.33334 14.1667H10V15.8333C10 17.435 12.039 18.1147 13 16.8333L15 14.1667ZM11.6667 12.5V15.8333L14.1667 12.5H16.6667V4.16667H3.33334V12.5H11.6667Z"
-            fill="#1E202C"
-          />
-        </svg>
-      </span>
-      <!-- bullet -->
-
-      <span class="txt">나의 종목 시그널</span>
-      <!-- txt -->
-    </div>
-    <!-- title -->
-
-    <div class="list-w">
-      <List
-        v-for="(item, index) in items"
-        :key="index"
-        :bullet="item.bullet"
-        :item="item.item"
-        :number="item.number"
-        :infoTxt="item.infoTxt"
-        :signalInfo="item.signalInfo"
-        :perTxt="item.perTxt"
-        :profitPercentage="item.profitPercentage"
-        :prTxt="item.prTxt"
-        :price="item.price"
-        :signalClass="item.signalClass"
-      ></List>
-    </div>
-    <!-- list -->
-
-    <div class="btn-group">
-      <button class="btn btn-half btn-ylw">
+  <div id="container">
+    <div id="myItemSignalGuide">
+      <div class="sub_title">
         <span class="bullet">
           <svg
-            width="15"
-            height="16"
-            viewBox="0 0 15 16"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
           >
-            <path
-              d="M4.16667 9.6C3.70643 9.6 3.33333 9.95817 3.33333 10.4C3.33333 10.8418 3.70643 11.2 4.16667 11.2H7.5C7.96024 11.2 8.33333 10.8418 8.33333 10.4C8.33333 9.95817 7.96024 9.6 7.5 9.6H4.16667Z"
-              fill="#FF9900"
-            />
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
-              d="M1.66667 0C0.746192 0 0 0.716345 0 1.6V14.4C0 15.2837 0.746192 16 1.66667 16H13.3333C14.2538 16 15 15.2837 15 14.4V1.6C15 0.716344 14.2538 0 13.3333 0H1.66667ZM13.3333 1.6H1.66667L1.66667 14.4H8.8018L13.3333 9.68721V1.6ZM13.3333 14.4H11.07L13.3333 12.0461V14.4Z"
+              d="M15 14.1667H16.6667C17.5871 14.1667 18.3333 13.4205 18.3333 12.5V4.16667C18.3333 3.24619 17.5871 2.5 16.6667 2.5H3.33334C2.41286 2.5 1.66667 3.24619 1.66667 4.16667V12.5C1.66667 13.4205 2.41286 14.1667 3.33334 14.1667H10V15.8333C10 17.435 12.039 18.1147 13 16.8333L15 14.1667ZM11.6667 12.5V15.8333L14.1667 12.5H16.6667V4.16667H3.33334V12.5H11.6667Z"
               fill="#0C0C20"
             />
             <path
-              d="M4.16667 6.4C3.70643 6.4 3.33333 6.75817 3.33333 7.2C3.33333 7.64183 3.70643 8 4.16667 8H10.8333C11.2936 8 11.6667 7.64183 11.6667 7.2C11.6667 6.75817 11.2936 6.4 10.8333 6.4H4.16667Z"
+              d="M5.83334 5.83333C5.3731 5.83333 5.00001 6.20643 5.00001 6.66667C5.00001 7.1269 5.3731 7.5 5.83334 7.5H14.1667C14.6269 7.5 15 7.1269 15 6.66667C15 6.20643 14.6269 5.83333 14.1667 5.83333H10H5.83334Z"
               fill="#FF9900"
             />
             <path
-              d="M3.33333 4C3.33333 3.55817 3.70643 3.2 4.16667 3.2H10.8333C11.2936 3.2 11.6667 3.55817 11.6667 4C11.6667 4.44183 11.2936 4.8 10.8333 4.8H4.16667C3.70643 4.8 3.33333 4.44183 3.33333 4Z"
+              d="M5.00001 10C5.00001 9.53976 5.3731 9.16667 5.83334 9.16667H9.16667C9.62691 9.16667 10 9.53976 10 10C10 10.4602 9.62691 10.8333 9.16667 10.8333H5.83334C5.3731 10.8333 5.00001 10.4602 5.00001 10Z"
               fill="#FF9900"
             />
           </svg>
         </span>
-        <span class="txt">이전 시그널 내역</span>
-      </button>
-      <!--  -->
-      <button class="btn btn-half btn-blk">
-        <span class="bullet">
+        <span class="txt"> 나의 종목 시그널 </span>
+      </div>
+      <!-- sub_title -->
+
+      <div class="vi_txt">
+        <strong>
+          주식에서 수익을 내는 방법은? <br />
+          <span> <em>싸게</em> 사고, <em>비싸게</em> 팔기!! </span>
+        </strong>
+        <span>
+          지금, 수익내는 매매시점이 궁금한 <br />
+          종목을 등록해 보세요.
+        </span>
+      </div>
+      <!-- 가이드 텍스트 -->
+
+      <div class="btn-box">
+        <button class="btn btn-blk">
           <svg
+            xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
             viewBox="0 0 16 16"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               fill-rule="evenodd"
@@ -105,94 +64,26 @@
               fill="#FFE600"
             />
           </svg>
-        </span>
-        <span class="txt">나의 종목 설정</span>
-      </button>
-      <!--  -->
+          나의 종목 설정
+        </button>
+      </div>
     </div>
-
-    <div class="date">
-      <span>2023/01/12 12:30</span>
-      <span>현재 시그널 상태</span>
-    </div>
-    <!-- date -->
-  </section>
+    <LatestSignalItem></LatestSignalItem>
+    <MorePeopleItem></MorePeopleItem>
+  </div>
 </template>
-<script>
-import List from "~/components/main/ItemList";
 
+<script>
+import LatestSignalItem from "~/components/main/LatestSignalItem";
+import MorePeopleItem from "~/components/main/MorePeopleItem";
 export default {
+  layout: "defaultLayout",
   components: {
-    List,
-  },
-  data() {
-    return {
-      items: [
-        {
-          bullet: false,
-          item: '셀트리온제약',
-          number: '000000',
-          infoTxt: true,
-          signalInfo: '관망 25일째',
-          perTxt: false,
-          profitPercentage: '+2.34',
-          prTxt: false,
-          price: '18,750',
-          signalClass: 'sig02',
-        },
-        {
-          bullet: false,
-          item: '삼성전자',
-          number: '000000',
-          infoTxt: true,
-          signalInfo: '보유 45일째',
-          perTxt: true,
-          profitPercentage: '+2.34',
-          prTxt: false,
-          price: '18,750',
-          signalClass: 'sig01',
-        },
-        {
-          bullet: false,
-          item: '아모레퍼시픽',
-          number: '000000',
-          infoTxt: true,
-          signalInfo: '보유 25일째',
-          perTxt: true,
-          profitPercentage: '+2.34',
-          prTxt: false,
-          price: '18,750',
-          signalClass: 'sig01',
-        },
-        {
-          bullet: true,
-          item: '셀트리온제약',
-          number: '000000',
-          infoTxt: true,
-          signalInfo: '매도시그널',
-          perTxt: false,
-          profitPercentage: '+2.34',
-          prTxt: true,
-          price: '18,750',
-          signalClass: 'sig02',
-        },
-        {
-          bullet: false,
-          item: '아모레퍼시픽',
-          number: '000000',
-          infoTxt: true,
-          signalInfo: '보유 25일째',
-          perTxt: true,
-          profitPercentage: '+2.34',
-          prTxt: false,
-          price: '18,750',
-          signalClass: 'sig01',
-        },
-      ],
-    };
+    LatestSignalItem,
+    MorePeopleItem,
   },
 };
 </script>
-<style scoped>
-@import '~/assets/css/main/myitemsignal.css';
+<style>
+@import "~/assets/css/sub/itemSignal.css";
 </style>

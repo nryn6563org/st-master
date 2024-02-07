@@ -1,19 +1,19 @@
 <template>
   <div id="wrap">
-    <MainHeader />
+    <SubHeader />
     <Nuxt />
     <MainFooter />
   </div>
 </template>
 
 <script>
-import MainHeader from '~/components/MainHeader'
+import SubHeader from '~/components/SubHeader'
 import MainFooter from '~/components/MainFooter'
 export default {
-  name: 'DefaultLayout',
+  name: 'subLayout',
   components: {
-    MainHeader,
+    SubHeader,
     MainFooter
-  },
+  }
 }
 </script>

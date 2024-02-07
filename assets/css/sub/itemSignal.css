@@ -1,0 +1,25 @@
+#myItemSignalGuide{
+  @apply relative w-full h-[348px] p-[20px_12px] bg-[#FFE500] bg-[url('~/assets/img/s_vi01.svg')] bg-no-repeat bg-[length:160px_134px] bg-[209px_142px]
+}
+#myItemSignalGuide .vi_txt{
+  @apply mt-[30px] w-full px-3
+}
+
+#myItemSignalGuide .vi_txt strong{
+  @apply block w-full text-[22px] font-[300] tracking-[-0.44px] leading-6 text-[#0c0c20]
+}
+#myItemSignalGuide .vi_txt strong span{
+  @apply inline-block h-8 leading-8 p-[0_10px_0_5px] bg-[#0C0C20] text-[28px] font-ibm tracking-[-1.68px] text-[#ffe500] mt-[5px]
+}
+#myItemSignalGuide .vi_txt strong span em{
+  @apply font-bold
+}
+#myItemSignalGuide .vi_txt span{
+  @apply block mt-4 text-[14px] leading-[16px] font-medium text-black
+}
+#myItemSignalGuide .btn-box{
+  @apply w-full mt-[90px] flex justify-center
+}
+#myItemSignalGuide .btn-box button{
+  @apply w-[240px] h-[56px] rounded-full gap-[6px] text-[16px] font-semibold
+}
