@@ -1,0 +1,62 @@
+#latestSignalItem{
+  @apply relative w-full bg-white p-[24px_12px]
+}
+
+.signal-tab-w{
+  @apply w-full mt-4
+}
+.signal-tab{
+  @apply flex w-full h-[54px] rounded-full overflow-hidden
+}
+.signal-tab button{
+  @apply h-[54px] bg-[#EAEEF2] text-[#B0B8C3]
+}
+.signal-tab button.active{
+  @apply bg-[#FFE500] text-black
+}
+.signal-list-w{
+  @apply pt-7 flex w-full gap-[9px]
+}
+.signal-list-w .list{
+  @apply w-[calc((100%-14px)/3)] h-[140px] rounded-[20px_0] p-[16px_12px]
+}
+.signal-list-w .list.lst01{
+  @apply bg-[#FFFAD2]
+}
+.signal-list-w .list.lst02{
+  @apply bg-[#FFEEEE]
+}
+.signal-list-w .list.lst03{
+  @apply bg-[#EBEDFF]
+}
+.signal-list-w .list .name{
+  @apply flex w-full flex-col gap-[6px] pt-[9px]
+}
+.signal-list-w .list .name .obj{
+  @apply text-[12px] font-medium text-[#0c0c20] font-ibm h-3 leading-3
+}
+.signal-list-w .list .name .num{
+  @apply text-[10px] font-medium font-ibm h-[10px] leading-[10px] text-[#B0B8C3]
+}
+.signal-list-w .list .per{
+  @apply block mt-[9px] h-4 leading-4
+}
+.signal-list-w .list .per span{
+  @apply text-[12px] text-[#ff505a] font-[600]
+}
+.signal-list-w .list .per span em{
+  @apply text-[16px] font-[900] 
+}
+.signal-list-w .list .price{
+  @apply block mt-[9px] leading-[27px] text-[14px] text-[#0c0c20] font-[800]
+}
+.signal-list-w .list .date{
+  @apply block text-[10px] h-[10px] leading-[10px] font-medium text-[#919bab]
+}
+
+.signal-tab-content .caution{
+  @apply pt-5 w-full flex gap-[6px] items-center
+}
+.signal-tab-content .caution .text{
+  @apply text-[12px] text-[#919bab] font-medium min-h-3 leading-3
+}

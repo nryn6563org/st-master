@@ -1,0 +1,12 @@
+#footer{
+  @apply bg-[#E9ECF0] p-[20px_12px] w-full min-h-[124px] flex items-center
+}
+#footer .guide{
+  @apply flex w-full flex-col gap-[6px]
+}
+#footer .guide div{
+  @apply flex leading-3 text-[12px] font-medium text-[#8D9299] before:content-['-'] before:pr-[5px]
+}
+#footer .guide span em{
+  @apply inline !important;
+}

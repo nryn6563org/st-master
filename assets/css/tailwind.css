@@ -1,0 +1,58 @@
+/* assets/css/tailwind.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+*{
+  @apply font-pretendard
+}
+html,body{
+  @apply bg-[#f0f0f0] h-full
+}
+#__nuxt,#__layout{
+  @apply h-full
+}
+#wrap{
+  @apply h-full
+}
+#container{
+  @apply min-h-[calc(100%-212px)] pb-[60px]
+}
+
+
+.red{
+  @apply text-[#FF505A]
+}
+.blue{
+  @apply text-[#3A89FF]
+}
+em{
+  @apply not-italic
+}
+.bold{
+  @apply font-bold
+}
+
+.sub_title{
+  @apply flex w-full gap-[6px] items-center h-7
+}
+.sub_title .txt{
+  @apply font-ibm font-semibold text-[18px] text-[#0C0C20] tracking-[-4%]
+}
+
+/* btn */
+.btn{
+  @apply flex items-center justify-center
+}
+.btn-half{
+  @apply w-1/2 font-semibold font-ibm text-[16px] gap-[6px]
+}
+.btn-ylw{
+  @apply bg-[#FFE500] text-black
+}
+.btn-blk{
+  @apply bg-black text-[#FFE500]
+}
+.btn-gry{
+  @apply bg-[#EAEEF2] text-[#B0B8C3]
+}

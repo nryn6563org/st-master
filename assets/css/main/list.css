@@ -1,0 +1,46 @@
+.list-w .list{
+  @apply flex w-full justify-between items-center rounded-[10px] bg-white border-[1px] border-[#dbdbdb] shadow-itemList py-2.5
+}
+.list-w .list > div:first-child{
+  @apply inline-flex flex-col gap-[6px] max-w-[50%] pl-5
+}
+.list-w .list > div:first-child .bullet{
+  @apply w-[48px] h-[18px] rounded-[20px] bg-[#FFEE56] flex justify-center items-center text-[10px] font-bold text-[#FF4242]
+}
+.list-w .list > div:first-child .obj{
+  @apply w-full block font-ibm font-semibold text-[16px] text-[#0c0c20] truncate leading-[16px]
+}
+.list-w .list > div:first-child .num{
+  @apply w-full text-[12px] font-medium text-[#919bab] leading-[12px]
+}
+.list-w .list > div:last-child{
+  @apply max-w-[50%] flex justify-end items-center gap-3 pr-3
+}
+.list-w .list > div:last-child .signal-info{
+  @apply flex flex-col gap-[6px]
+}
+.list-w .list > div:last-child .signal-info .txt{
+  @apply leading-3 text-[12px] text-black flex gap-1 items-center justify-end
+}
+.list-w .list > div:last-child .signal-info .txt .per{
+  @apply text-[12px] font-semibold leading-[14px]
+}
+.list-w .list > div:last-child .signal-info .txt .per em{
+  @apply font-[900] leading-[12px] text-[14px]
+}
+.list-w .list > div:last-child .signal-info .price{
+  @apply px-[1px] text-[#0c0c20] text-[12px] font-[900] h-[14px] leading-[14px] relative w-fit z-[20]
+  after:content-[''] after:absolute after:h-[7px] after:w-full after:bottom-0 after:left-0 after:bg-[#ffee56] after:z-[-1]
+}
+.list-w .list > div:last-child .signal-info .price em{
+  @apply font-[600] text-[14px] 
+}
+.list-w .list > div:last-child .signal{
+  @apply w-[54px] h-[54px] border-[5px] rounded-[20px_0_20px_0] flex items-center justify-center font-ibm text-[16px] font-medium
+}
+.list-w .list > div:last-child .signal.sig01{
+  @apply text-[#ff505a] border-[#FFC1C1]
+}
+.list-w .list > div:last-child .signal.sig02{
+  @apply text-[#3A89FF] border-[#AFCFFF]
+}

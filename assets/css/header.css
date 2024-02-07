@@ -1,0 +1,17 @@
+#header{
+  @apply w-full bg-white border-b-[4px] border-[#FFE500] h-[88px] flex flex-col justify-center items-center gap-[2px]
+}
+#header .top{
+  @apply pt-3 flex w-full gap-1 justify-center items-center
+}
+#header .top h1{
+  @apply w-[30px] h-[30px] indent-[-9999em] flex relative
+  before:content-[''] before:w-full before:h-full before:bg-[url('~/assets/img/logo-bg.png')] before:bg-cover
+  after:content-[''] after:w-[9px] after:h-[9px] after:bg-[url('~/assets/img/logo-pt.png')] after:bg-cover after:absolute after:top-[9px] after:left-[6px]
+}
+#header .top .title{
+  @apply h-[33px] font-ibm font-bold text-[22px] tracking-[-7%] text-[#0C0C20];
+}
+#header .txt{
+  @apply w-full text-center text-[14px] text-[#0C0C20]
+}

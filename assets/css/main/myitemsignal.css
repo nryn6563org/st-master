@@ -1,0 +1,16 @@
+#myitemsignal{
+  @apply relative w-full p-[32px_12px_48px]
+}
+.list-w{
+  @apply flex flex-col w-full gap-3 pt-2.5
+}
+
+#myitemsignal .btn-group{
+  @apply flex w-full pt-8
+}
+#myitemsignal .btn-group button{
+  @apply h-[57px]
+}
+#myitemsignal .date{
+  @apply absolute top-10 right-3 h-3 leading-3 text-[12px] text-[#495062]
+}

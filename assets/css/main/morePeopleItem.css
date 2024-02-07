@@ -1,0 +1,53 @@
+#morePeopleItem{
+  @apply w-full p-[48px_12px_60px]
+}
+
+#morePeopleItem .p-list-w{
+  @apply bg-white w-full px-3 mt-4
+}
+.p-list-w .list{
+  @apply py-3 w-full border-b-[1px] border-[#919bab] border-dashed flex gap-3 items-center
+}
+.p-list-w .list:last-child{
+  @apply border-b-transparent
+}
+
+.p-list-w .list .info{
+  @apply w-[calc(100%-200px)] flex flex-col gap-1
+}
+.p-list-w .list .info strong{
+  @apply w-full truncate text-[#0c0c20] text-[16px] font-semibold h-4 leading-4 font-ibm
+}
+.p-list-w .list .info span{
+  @apply w-full h-3 leading-3 text-[12px] text-[#919bab] font-medium
+}
+.p-list-w .list .per{
+  @apply w-[76px] 
+}
+.p-list-w .list .per > div{
+  @apply w-full flex flex-col items-center justify-center gap-[1px]
+}
+.p-list-w .list .per .txt{
+  @apply text-[12px] text-[#0c0c20] h-3 leading-3
+}
+.p-list-w .list .per .num{
+  @apply text-[10px] font-[900] leading-3
+}
+.p-list-w .list .per .num span{
+  @apply text-[14px] font-[600]
+}
+.p-list-w .list .per .num span em{
+  @apply font-[900]
+}
+.p-list-w .list .stash{
+@apply flex w-[48px] justify-center leading-[14px] text-[12px] text-black text-center
+}
+.p-list-w .list .signal{
+  @apply w-10 h-10 rounded-[14px_0] border-[3px] flex items-center justify-center text-[14px] font-semibold font-ibm
+}
+.p-list-w .list .sig01{
+  @apply border-[#FFC1C1] text-[#FF505A]
+}
+.p-list-w .list .sig02{
+  @apply border-[#afcfff] text-[#3A89FF]
+}
