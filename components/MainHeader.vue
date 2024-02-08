@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="top">
-      <h1 class="logo">로고</h1>
+      <h1 class="logo"></h1>
       <!-- logo -->
 
       <div class="title">

@@ -17,18 +17,22 @@ export default {
       {
         rel: "preconnect",
         href: "https://fonts.gstatic.com",
-        crossorigin: "anonymous",
+        crossorigin: "anonymous"
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap"
       },
       {
         rel: "stylesheet",
         as: "style",
         crossorigin: "anonymous",
-        href: "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css",
+        href: "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
       },
+      {
+        rel: "stylesheet",
+        href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      }
     ],
   },
 
@@ -51,6 +55,7 @@ export default {
   build: {},
 
   target: 'static',
+
   router: {
     base: '/st-master/'
   }

@@ -6,7 +6,10 @@
 }
 
 #myitemsignal .btn-group{
-  @apply flex w-full pt-8
+  @apply flex w-full pt-8 
+}
+#myitemsignal .btn-group.floating{
+  @apply fixed bottom-0 left-0 w-full z-20
 }
 #myitemsignal .btn-group button{
   @apply h-[57px]

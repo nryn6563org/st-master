@@ -16,7 +16,7 @@ html,body{
   @apply h-full
 }
 #container{
-  @apply min-h-[calc(100%-212px)] pb-[60px] bg-[#f0f0f0]
+  @apply min-h-[calc(100%-212px)] bg-[#f0f0f0]
 }
 #container.sub{
   @apply min-h-[calc(100%-186px)] pb-[120px]

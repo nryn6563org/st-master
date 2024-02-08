@@ -30,10 +30,10 @@
   @apply bg-[#EBEDFF]
 }
 .signal-list-w .list .name{
-  @apply flex w-full flex-col gap-[6px] pt-[9px]
+  @apply flex w-full flex-col gap-[2px] pt-[9px]
 }
 .signal-list-w .list .name .obj{
-  @apply text-[12px] font-medium text-[#0c0c20] font-ibm h-3 leading-3
+  @apply text-[12px] font-bold text-[#0c0c20] font-ibm h-3 leading-3 tracking-[-0.48px]
 }
 .signal-list-w .list .name .num{
   @apply text-[10px] font-medium font-ibm h-[10px] leading-[10px] text-[#B0B8C3]
@@ -48,10 +48,10 @@
   @apply text-[16px] font-[900] 
 }
 .signal-list-w .list .price{
-  @apply block mt-[9px] leading-[27px] text-[14px] text-[#0c0c20] font-[800]
+  @apply block mt-[9px] leading-[12px] text-[12px] text-[#0c0c20] font-semibold
 }
 .signal-list-w .list .date{
-  @apply block text-[10px] h-[10px] leading-[10px] font-medium text-[#919bab]
+  @apply block mt-[15px] text-[10px] h-[10px] leading-[10px] font-medium text-[#919bab]
 }
 
 .signal-tab-content .caution{
