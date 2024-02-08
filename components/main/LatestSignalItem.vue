@@ -45,13 +45,13 @@
         <button :class="{active : activeTab === 'buy'}" class="btn btn-half" @click="changeTab('buy')">최근 매수 시그널</button>
       </div>
       <!-- 탭 -->
-      
+
       <div class="signal-tab-content">
         <SignalContent id="tab01" v-show="activeTab === 'sell'"></SignalContent>
         <!-- 매도 시그널 -->
         <SignalContent id="tab02" v-show="activeTab === 'buy'"></SignalContent>
         <!-- 매수 시그널 -->
-        
+
         <div class="caution">
           <span class="bullet">
             <svg
@@ -93,16 +93,16 @@
 <script>
 import SignalContent from '~/components/main/SignalContent'
 
-export default{
+export default {
   components: {
     SignalContent
   },
-  data(){
-    return{
-      activeTab : 'sell'
+  data() {
+    return {
+      activeTab: 'sell'
     }
   },
-  methods:{
+  methods: {
     changeTab(tab) {
       this.activeTab = tab
     }

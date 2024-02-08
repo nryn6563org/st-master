@@ -262,12 +262,12 @@ export default {
   methods: {
     handleScroll() {
       // 스크롤 위치 계산 등으로 도달 여부 확인
-      const scrollTrigger = document.getElementById('scroll-trigger');
-      const scrollTriggerRect = scrollTrigger.getBoundingClientRect();
+      const scrollTrigger = document.getElementById('scroll-trigger')
+      const scrollTriggerRect = scrollTrigger.getBoundingClientRect()
       
       // 원하는 스크롤 도달 위치에 따라 showFloatingBtnGroup 값을 변경
       this.showFloatingBtnGroup = scrollTriggerRect.bottom < 0;
-    },
+    }
   }
 };
 </script>

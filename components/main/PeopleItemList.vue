@@ -40,16 +40,16 @@ export default {
     percent: String,
     date: String,
     stash: String,
-    signalClass: String,
+    signalClass: String
   },
   methods: {
     getSignalText() {
       return this.signalClass === 'sig01'
         ? '매수'
         : this.signalClass === 'sig02'
-        ? '매도'
-        : this.signalText
-    },
-  },
-};
+          ? '매도'
+          : this.signalText
+    }
+  }
+}
 </script>

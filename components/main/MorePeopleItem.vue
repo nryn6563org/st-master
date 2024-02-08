@@ -44,11 +44,11 @@
 </template>
 
 <script>
-import Plist from'~/components/main/PeopleItemList'
+import Plist from '~/components/main/PeopleItemList'
 
 export default {
   components: {
-    Plist,
+    Plist
   },
   data() {
     return {
@@ -61,7 +61,7 @@ export default {
           percent: '2.34',
           date: '45',
           stash: '보유중',
-          signalClass: 'sig01',
+          signalClass: 'sig01'
         },
         {
           name: '삼성전자',
@@ -71,7 +71,7 @@ export default {
           percent: '2.34',
           date: '5',
           stash: '관망중',
-          signalClass: 'sig02',
+          signalClass: 'sig02'
         },
         {
           name: 'SK하이닉스',
@@ -81,8 +81,8 @@ export default {
           percent: '2.34',
           date: '5',
           stash: '보유중',
-          signalClass: 'sig01',
-        },{
+          signalClass: 'sig01'
+        }, {
           name: '삼성바이오로직스',
           number: '000000',
           per: true,
@@ -90,7 +90,7 @@ export default {
           percent: '2.34',
           date: '45',
           stash: '보유중',
-          signalClass: 'sig02',
+          signalClass: 'sig02'
         },
         {
           name: '삼성전자',
@@ -100,7 +100,7 @@ export default {
           percent: '2.34',
           date: '5',
           stash: '관망중',
-          signalClass: 'sig01',
+          signalClass: 'sig01'
         },
         {
           name: 'SK하이닉스',
@@ -110,8 +110,8 @@ export default {
           percent: '2.34',
           date: '5',
           stash: '보유중',
-          signalClass: 'sig01',
-        },{
+          signalClass: 'sig01'
+        }, {
           name: '삼성바이오로직스',
           number: '000000',
           per: true,
@@ -119,7 +119,7 @@ export default {
           percent: '2.34',
           date: '45',
           stash: '보유중',
-          signalClass: 'sig02',
+          signalClass: 'sig02'
         },
         {
           name: '삼성전자',
@@ -129,7 +129,7 @@ export default {
           percent: '2.34',
           date: '5',
           stash: '관망중',
-          signalClass: 'sig02',
+          signalClass: 'sig02'
         },
         {
           name: 'SK하이닉스',
@@ -139,7 +139,7 @@ export default {
           percent: '2.34',
           date: '5',
           stash: '보유중',
-          signalClass: 'sig01',
+          signalClass: 'sig01'
         },
         {
           name: '삼성전자',
@@ -149,12 +149,12 @@ export default {
           percent: '2.34',
           date: '1000',
           stash: '관망중',
-          signalClass: 'sig01',
+          signalClass: 'sig01'
         }
       ]
     }
   }
-};
+}
 </script>
 
 <style scoped>

@@ -40,17 +40,17 @@ export default {
     number: String,
     infoTxt: Boolean,
     signalInfo: String,
-    perTxt:Boolean,
+    perTxt: Boolean,
     profitPercentage: String,
-    prTxt:Boolean,
+    prTxt: Boolean,
     price: String,
-    signalClass: String,
+    signalClass: String
   },
   methods: {
     getSignalText() {
-      return this.signalClass === 'sig01' ? '매수' : this.signalClass === 'sig02' ? '매도' : this.signalText;
-    },
-  },
+      return this.signalClass === 'sig01' ? '매수' : this.signalClass === 'sig02' ? '매도' : this.signalText
+    }
+  }
 }
 </script>
 

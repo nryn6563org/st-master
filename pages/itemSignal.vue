@@ -74,10 +74,10 @@
 </template>
 
 <script>
-import LatestSignalItem from "~/components/main/LatestSignalItem";
-import MorePeopleItem from "~/components/main/MorePeopleItem";
+import LatestSignalItem from '~/components/main/LatestSignalItem'
+import MorePeopleItem from '~/components/main/MorePeopleItem'
 export default {
-  layout: "defaultLayout",
+  layout: 'defaultLayout',
   components: {
     LatestSignalItem,
     MorePeopleItem,

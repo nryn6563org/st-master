@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import MyItemSignal from "~/components/main/MyItemSignal";
-import LatestSignalItem from "~/components/main/LatestSignalItem";
-import MorePeopleItem from "~/components/main/MorePeopleItem"
+import MyItemSignal from '~/components/main/MyItemSignal'
+import LatestSignalItem from '~/components/main/LatestSignalItem'
+import MorePeopleItem from '~/components/main/MorePeopleItem'
 export default {
-  layout: "defaultLayout",
+  layout: 'defaultLayout',
   components: {
     MyItemSignal,
     LatestSignalItem,

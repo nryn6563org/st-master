@@ -2,7 +2,6 @@
   <div id="container" class="sub">
     <div id="itemSetting">
       <div class="top">
-
         <div class="additem">
           <button>
             <svg
@@ -243,15 +242,12 @@
 </template>
 <script>
 export default {
-  layout:'subLayout',
-  data(){
-    return{
-          }
-  },
-  async asyncData({ store }) {
+  layout: 'subLayout',
+  asyncData({ store }) {
     // 페이지 로딩 시 헤더 타이틀을 변경
-    store.commit('setPageTitle', '나의 종목 설정');
-  },
+    store.commit('setPageTitle', '나의 종목 설정')
+    return {}
+  }
 }
 </script>
 <style scoped>

@@ -10,7 +10,7 @@
 import SubHeader from '~/components/SubHeader'
 import MainFooter from '~/components/MainFooter'
 export default {
-  name: 'subLayout',
+  name: 'SubLayout',
   components: {
     SubHeader,
     MainFooter

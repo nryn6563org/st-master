@@ -16,8 +16,6 @@
   </header>
 </template>
 
-
-
 <style scoped>
 @import "~/assets/css/header.css";
 </style>

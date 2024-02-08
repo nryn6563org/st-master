@@ -51,10 +51,10 @@
 export default {
   computed: {
     title() {
-      return this.$store.state.pageTitle;
-    },
-  },
-};
+      return this.$store.state.pageTitle
+    }
+  }
+}
 </script>
 
 <style scoped>
