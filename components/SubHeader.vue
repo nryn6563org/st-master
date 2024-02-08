@@ -1,6 +1,6 @@
 <template>
   <header id="sub_header">
-    <button class="back">
+    <button class="back" @click="backToPage">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -52,6 +52,11 @@ export default {
   computed: {
     title() {
       return this.$store.state.pageTitle
+    }
+  },
+  methods: {
+    backToPage() {
+      this.$router.go(-1)
     }
   }
 }

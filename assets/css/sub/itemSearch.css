@@ -1,0 +1,43 @@
+.searchArea{
+  @apply bg-[#ffe500] pt-5 pb-7 px-4 w-full
+  bg-[url('~/assets/img/bg-search.png')] bg-no-repeat bg-[length:103px_103px] bg-[256px_20px]
+}
+.searchArea .top{
+  @apply w-full flex flex-col bg-transparent
+}
+.searchArea .top div{
+  @apply text-[28px] text-[#0c0c20] font-[200] leading-7 tracking-[-0.56px] relative pb-[14px]
+  after:content-[''] after:absolute after:w-[74px] after:h-[3px] after:bg-[#0c0c20]
+  after:bottom-0 after:left-0
+}
+.searchArea .top div em{
+  @apply font-[800]
+}
+.searchArea .top span{
+  @apply mt-2.5 text-[14px] text-[#0c0c20] font-medium leading-[16px]
+}
+.searchArea .inputArea{
+  @apply w-full pt-6 px-2.5 relative 
+}
+.searchArea .inputArea input{
+  @apply w-full h-[64px] border-[3px] border-[#0c0c20] rounded-full bg-white p-[0_48px_0_24px]
+  placeholder:text-[14px] placeholder:font-semibold placeholder:text-[#919bab]
+}
+.searchArea .inputArea button{
+  @apply absolute top-10 right-[44px] z-20
+}
+.favItemList{
+  @apply w-full pt-8 px-3
+}
+.favItemList .itemList{
+  @apply w-[calc(100%-30px)] mx-[15px] mt-[9px] border-t-[3px] border-[#0c0c20] py-4 flex flex-col gap-6
+}
+.favItemList .itemList .list{
+  @apply flex w-full gap-[6px] h-4
+}
+.favItemList .itemList .list .name{
+  @apply h-4 leading-4 text-[16px] text-[#0c0c20] font-medium
+}
+.favItemList .itemList .list .num{
+  @apply text-[12px] font-medium text-[#919bab]
+}

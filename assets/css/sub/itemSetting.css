@@ -4,7 +4,7 @@
 #itemSetting .top{
   @apply bg-[#ffe500] w-full pt-1 pb-4 flex justify-center
 }
-#itemSetting .top button{
+#itemSetting .top > .additem > button{
   @apply h-[48px] w-[280px] flex justify-center items-center rounded-full bg-[#495062] gap-3 text-[16px] font-ibm font-semibold text-[#ffe500]
 }
 

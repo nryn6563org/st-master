@@ -77,12 +77,12 @@
 import LatestSignalItem from '~/components/main/LatestSignalItem'
 import MorePeopleItem from '~/components/main/MorePeopleItem'
 export default {
-  layout: 'defaultLayout',
   components: {
     LatestSignalItem,
-    MorePeopleItem,
+    MorePeopleItem
   },
-};
+  layout: 'defaultLayout'
+}
 </script>
 <style>
 @import "~/assets/css/sub/itemSignal.css";

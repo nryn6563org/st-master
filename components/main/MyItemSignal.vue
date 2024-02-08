@@ -83,7 +83,7 @@
         <span class="txt">이전 시그널 내역</span>
       </button>
       <!--  -->
-      <button class="btn btn-half btn-blk">
+      <button class="btn btn-half btn-blk" @click="settingToPage">
         <span class="bullet">
           <svg
             width="16"
@@ -150,7 +150,7 @@
         <span class="txt">이전 시그널 내역</span>
       </button>
       <!--  -->
-      <button class="btn btn-half btn-blk">
+      <button class="btn btn-half btn-blk" @click="settingToPage">
         <span class="bullet">
           <svg
             width="16"
@@ -180,11 +180,11 @@
   </section>
 </template>
 <script>
-import List from "~/components/main/ItemList";
+import List from '~/components/main/ItemList'
 
 export default {
   components: {
-    List,
+    List
   },
   data() {
     return {
@@ -200,7 +200,7 @@ export default {
           profitPercentage: '+2.34',
           prTxt: false,
           price: '18,750',
-          signalClass: 'sig02',
+          signalClass: 'sig02'
         },
         {
           bullet: false,
@@ -212,7 +212,7 @@ export default {
           profitPercentage: '+2.34',
           prTxt: false,
           price: '18,750',
-          signalClass: 'sig01',
+          signalClass: 'sig01'
         },
         {
           bullet: false,
@@ -224,7 +224,7 @@ export default {
           profitPercentage: '+2.34',
           prTxt: false,
           price: '18,750',
-          signalClass: 'sig01',
+          signalClass: 'sig01'
         },
         {
           bullet: true,
@@ -236,7 +236,7 @@ export default {
           profitPercentage: '+2.34',
           prTxt: true,
           price: '18,750',
-          signalClass: 'sig02',
+          signalClass: 'sig02'
         },
         {
           bullet: false,
@@ -248,28 +248,31 @@ export default {
           profitPercentage: '+2.34',
           prTxt: false,
           price: '18,750',
-          signalClass: 'sig01',
-        },
-      ],
-    };
+          signalClass: 'sig01'
+        }
+      ]
+    }
   },
   mounted() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll)
   },
   destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
     handleScroll() {
       // 스크롤 위치 계산 등으로 도달 여부 확인
       const scrollTrigger = document.getElementById('scroll-trigger')
       const scrollTriggerRect = scrollTrigger.getBoundingClientRect()
-      
+
       // 원하는 스크롤 도달 위치에 따라 showFloatingBtnGroup 값을 변경
-      this.showFloatingBtnGroup = scrollTriggerRect.bottom < 0;
+      this.showFloatingBtnGroup = scrollTriggerRect.bottom < 0
+    },
+    settingToPage() {
+      this.$router.push('/itemSetting')
     }
   }
-};
+}
 </script>
 <style scoped>
 @import '~/assets/css/main/myitemsignal.css';

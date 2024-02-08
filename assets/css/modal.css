@@ -1,0 +1,19 @@
+.modal {
+  @apply fixed w-full h-full flex justify-center items-center inset-0 bg-black bg-opacity-80 z-20;
+}
+.modal-content {
+  @apply relative bg-white rounded-xl flex flex-col justify-between;
+}
+/* 종목검색 모달 */
+.modal.itemSearch {
+  @apply bg-transparent;
+}
+.itemSearch .modal-content {
+  @apply w-full h-full rounded-none justify-start;
+}
+.itemSearch .modal-content .modal-header {
+  @apply flex w-full min-h-[20px] justify-between p-[16px_12px] bg-[#FFE500] items-center
+}
+.itemSearch .modal-content .modal-header .title{
+  @apply flex gap-[6px] text-[18px] font-ibm font-bold leading-[16px] text-[#0c0c20] items-center
+}
