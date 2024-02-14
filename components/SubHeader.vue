@@ -22,10 +22,12 @@
       <span>{{ title }}</span>
       <!-- 타이틀 -->
 
-      <button>
-        <span v-html="customButtonText.svg"></span>
-        <span>{{ customButtonText.text }}</span>
-      </button>
+      <router-link :to="customButtonLink">
+        <button>
+          <span v-html="customButtonText.svg"></span>
+          <span>{{ customButtonText.text }}</span>
+        </button>
+      </router-link>
       <!-- 버튼 -->
     </div>
     <!-- 페이지 타이틀 -->
@@ -40,6 +42,9 @@ export default {
     },
     customButtonText() {
       return this.$store.state.customButtonText
+    },
+    customButtonLink() {
+      return this.$store.state.customButtonLink
     }
   },
   methods: {

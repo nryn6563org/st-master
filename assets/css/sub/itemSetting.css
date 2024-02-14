@@ -27,3 +27,46 @@
 #itemSetting .btn-box button{
   @apply w-full flex justify-center items-center h-[56px] gap-[15px] text-[16px] font-ibm font-semibold text-white bg-[#495062]
 }
+
+#itemSetting .visual{
+  @apply w-full flex flex-col items-center bg-[#FFE500] px-4 pt-[5px]
+}
+#itemSetting .visual .txt{
+  @apply w-full block pb-5 text-center text-[18px] text-[#0c0c20] font-medium leading-5
+  before:content-[''] before:w-[calc(100%-20px)] before:h-[3px] before:bg-[#0c0c20] before:block before:m-[10px_10px_20px]
+}
+
+.alarmListCheck{
+  @apply w-full p-[20px_12px_48px]
+}
+.alarmListCheck .box{
+  @apply  w-full border-[1px] border-[#dbdbdb] rounded-[10px] shadow-itemList bg-white p-6 flex flex-col gap-6
+}
+.alarmListCheck .box > div{
+  @apply w-full relative
+}
+.alarmListCheck .box > div input{
+  @apply absolute left-[-9999em]
+}
+.alarmListCheck .box > div input + label{
+  @apply w-full flex gap-4 items-center
+  before:content-[''] before:w-6 before:h-6 before:border-[1px] before:border-[#CDCFD0] before:rounded-[4px]
+}
+.alarmListCheck .box > div input:checked + label{
+  @apply before:border-[#0c0c20] before:bg-[#ff9900] before:bg-[url('~/assets/img/check.png')] before:bg-no-repeat before:bg-[center_50%] before:bg-[length:15px_15px]
+}
+.alarmListCheck .box > div label > div{
+  @apply w-[calc(100%-40px)] flex gap-3 items-center
+}
+.alarmListCheck .box > div label > div .txt{
+  @apply text-[18px] text-[#0c0c20] font-medium
+}
+.alarmListCheck .box > div label > div .bullet{
+  @apply w-[66px] h-[24px] border-[1px] rounded-full flex justify-center items-center text-[12px] font-semibold
+}
+.alarmListCheck .box > div label > div .bullet.ko{
+  @apply border-[#ff505a] text-[#ff505a]
+}
+.alarmListCheck .box > div label > div .bullet.usa{
+  @apply border-[#3A89FF] text-[#3A89FF]
+}

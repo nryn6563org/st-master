@@ -2,7 +2,7 @@
   <div id="wrap">
     <SubHeader />
     <Nuxt />
-    <MainFooter />
+    <MainFooter class="sub" />
   </div>
 </template>
 

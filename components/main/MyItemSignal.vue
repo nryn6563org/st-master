@@ -42,6 +42,7 @@
         :infoTxt="item.infoTxt"
         :signalInfo="item.signalInfo"
         :perTxt="item.perTxt"
+        :symbol="item.symbol"
         :profitPercentage="item.profitPercentage"
         :prTxt="item.prTxt"
         :price="item.price"
@@ -197,7 +198,8 @@ export default {
           infoTxt: true,
           signalInfo: '관망 25일째',
           perTxt: false,
-          profitPercentage: '+2.34',
+          symbol: '+',
+          profitPercentage: '2.34',
           prTxt: false,
           price: '18,750',
           signalClass: 'sig02'
@@ -209,7 +211,8 @@ export default {
           infoTxt: true,
           signalInfo: '보유 45일째',
           perTxt: true,
-          profitPercentage: '+2.34',
+          symbol: '+',
+          profitPercentage: '2.34',
           prTxt: false,
           price: '18,750',
           signalClass: 'sig01'
@@ -221,7 +224,8 @@ export default {
           infoTxt: true,
           signalInfo: '보유 25일째',
           perTxt: true,
-          profitPercentage: '+2.34',
+          symbol: '-',
+          profitPercentage: '2.34',
           prTxt: false,
           price: '18,750',
           signalClass: 'sig01'
@@ -233,7 +237,8 @@ export default {
           infoTxt: true,
           signalInfo: '매도시그널',
           perTxt: false,
-          profitPercentage: '+2.34',
+          symbol: '+',
+          profitPercentage: '2.34',
           prTxt: true,
           price: '18,750',
           signalClass: 'sig02'
@@ -245,7 +250,8 @@ export default {
           infoTxt: true,
           signalInfo: '보유 25일째',
           perTxt: true,
-          profitPercentage: '+2.34',
+          symbol: '+',
+          profitPercentage: '2.34',
           prTxt: false,
           price: '18,750',
           signalClass: 'sig01'

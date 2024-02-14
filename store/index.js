@@ -12,5 +12,8 @@ export const mutations = {
   },
   setCustomButtonText(state, customButtonText) {
     state.customButtonText = customButtonText
+  },
+  setCustomButtonLink(state, customButtonLink) {
+    state.customButtonLink = customButtonLink
   }
 }

@@ -42,7 +42,7 @@
   @apply block mt-[9px] h-4 leading-4
 }
 .signal-list-w .list .per span{
-  @apply text-[12px] text-[#ff505a] font-[600]
+  @apply text-[12px] font-[600]
 }
 .signal-list-w .list .per span em{
   @apply text-[16px] font-[900] 

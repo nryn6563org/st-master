@@ -15,7 +15,7 @@
         <!-- signalInfo = 보유 45일째  -->
         <div v-if="perTxt" class="txt">
           수익률
-          <span class="per red"><em>{{ profitPercentage }}</em>%</span>
+          <span :class="{ red: symbol === '+', blue: symbol === '-' }" class="per"><em>{{ symbol }}{{ profitPercentage }}</em>%</span>
         </div>
         <div v-if="prTxt" class="price">
           <span><em>{{ price }}</em>원</span>
@@ -41,6 +41,7 @@ export default {
     infoTxt: Boolean,
     signalInfo: String,
     perTxt: Boolean,
+    symbol: String,
     profitPercentage: String,
     prTxt: Boolean,
     price: String,

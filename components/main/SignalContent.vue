@@ -8,7 +8,7 @@
       <!-- item name -->
 
       <div class="per">
-        <span><em>+32.34</em>%</span>
+        <span class="red"><em>+32.34</em>%</span>
       </div>
       <!-- percent -->
 
@@ -32,7 +32,7 @@
       <!-- item name -->
 
       <div class="per">
-        <span><em>+32.34</em>%</span>
+        <span class="blue"><em>-32.34</em>%</span>
       </div>
       <!-- percent -->
 
@@ -56,7 +56,7 @@
       <!-- item name -->
 
       <div class="per">
-        <span><em>+32.34</em>%</span>
+        <span class="red"><em>+32.34</em>%</span>
       </div>
       <!-- percent -->
 

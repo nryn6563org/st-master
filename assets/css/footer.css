@@ -1,5 +1,8 @@
 #footer{
-  @apply bg-[#E9ECF0] p-[20px_12px] w-full min-h-[124px] flex items-center
+  @apply bg-[#E9ECF0] p-[20px_12px_67px] w-full min-h-[124px] flex items-center
+}
+#footer.sub{
+  @apply p-[20px_12px]
 }
 #footer .guide{
   @apply flex w-full flex-col gap-[6px]

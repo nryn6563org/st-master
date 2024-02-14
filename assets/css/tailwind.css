@@ -7,19 +7,22 @@
   @apply font-pretendard
 }
 html,body{
-  @apply h-full
+  @apply h-full m-0
 }
 #__nuxt,#__layout{
-  @apply h-full
+  @apply h-full m-0
 }
 #wrap{
-  @apply h-full
+  @apply h-full w-full
 }
 #container{
-  @apply min-h-[calc(100%-212px)] bg-[#f0f0f0]
+  @apply min-h-[calc(100%-212px)] bg-[#f0f0f0] w-full
 }
 #container.sub{
-  @apply min-h-[calc(100%-186px)] pb-[120px]
+  @apply min-h-[calc(100%-186px)]
+}
+.content{
+  @apply w-full
 }
 
 

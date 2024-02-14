@@ -231,6 +231,7 @@ export default {
     }
     store.commit('setPageTitle', '나의 종목 설정')
     store.commit('setCustomButtonText', newCustomButtonText)
+    store.commit('setCustomButtonLink', '/alarmSetting/')
     return {}
   }
 }
