@@ -53,6 +53,9 @@ em{
 .btn-half{
   @apply w-1/2 font-semibold font-ibm text-[16px] gap-[6px]
 }
+.btn-s{
+  @apply w-full font-semibold font-ibm text-[16px] gap-[6px]
+}
 .btn-ylw{
   @apply bg-[#FFE500] text-black
 }

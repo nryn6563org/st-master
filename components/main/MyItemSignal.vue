@@ -52,7 +52,7 @@
     <!-- list -->
 
     <div id="scroll-trigger" class="btn-group">
-      <button class="btn btn-half btn-ylw">
+      <button class="btn btn-half btn-ylw" @click="triggerBeforeSignal">
         <span class="bullet">
           <svg
             width="15"
@@ -119,7 +119,7 @@
     <!-- date -->
 
     <div v-if="showFloatingBtnGroup" class="btn-group floating animate__animated animate__fadeInUp animate__faster">
-      <button class="btn btn-half btn-ylw">
+      <button class="btn btn-half btn-ylw" @click="triggerBeforeSignal">
         <span class="bullet">
           <svg
             width="15"
@@ -178,14 +178,17 @@
       </button>
       <!--  -->
     </div>
+    <BeforeSignal></BeforeSignal>
   </section>
 </template>
 <script>
 import List from '~/components/main/ItemList'
+import BeforeSignal from '~/components/modal/BeforeSignal'
 
 export default {
   components: {
-    List
+    List,
+    BeforeSignal
   },
   data() {
     return {
@@ -276,6 +279,9 @@ export default {
     },
     settingToPage() {
       this.$router.push('/itemSetting')
+    },
+    triggerBeforeSignal() {
+      this.$store.commit('setShowModal', true)
     }
   }
 }

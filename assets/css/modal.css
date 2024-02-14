@@ -17,3 +17,6 @@
 .itemSearch .modal-content .modal-header .title{
   @apply flex gap-[6px] text-[18px] font-ibm font-bold leading-[16px] text-[#0c0c20] items-center
 }
+.itemSearch .modal-content .modal-body{
+  @apply w-full h-[calc(100%-52px)] overflow-y-auto
+}

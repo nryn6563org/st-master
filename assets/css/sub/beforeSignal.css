@@ -1,0 +1,48 @@
+.visualArea{
+  @apply w-full h-[110px] bg-[#FFE500] px-4 pt-[30px] bg-[url('~/assets/img/bg-search.png')] bg-[length:64px_64px] bg-no-repeat bg-[293px_30px]
+}
+.visualArea span{
+  @apply text-[20px] text-[#0c0c20] font-light tracking-[-0.4px] leading-6 block pb-4 relative
+  after:absolute after:content-[''] after:w-[74px] after:h-[3px] after:bg-[#0c0c20] after:bottom-0 after:left-0
+}
+.visualArea span em{
+  @apply font-semibold
+}
+.signalAlmList{
+  @apply  px-6 py-8 relative flex w-full flex-col gap-7
+  before:content-[''] before:absolute before:top-[36px] before:left-[33px] before:w-[2px] before:h-full before:border-l-[2px] before:border-dashed before:border-[#0c0c20]
+}
+.signalAlmList > div{
+  @apply relative z-10 w-full flex justify-start gap-4
+}
+.signalAlmList > div .signal{
+  @apply flex w-[calc(100%-38px)] gap-x-3 gap-y-[7px] flex-wrap
+}
+.signalAlmList > div .signal .sig{
+  @apply w-[72px] h-6 rounded-full flex justify-center items-center border-[1px] text-[12px] font-semibold
+}
+.signalAlmList > div .signal .sig.sig01{
+  @apply border-[#FF505A] text-[#FF505A]
+}
+.signalAlmList > div .signal .sig.sig02{
+  @apply border-[#3A89FF] text-[#3A89FF]
+}
+
+.signalAlmList > div .signal .itemName{
+  @apply w-[calc(100%-84px)] flex h-6 items-center gap-[6px]
+}
+.signalAlmList > div .signal .itemName .name{
+  @apply text-[14px] text-[#0c0c20] font-semibold
+}
+.signalAlmList > div .signal .itemName .number{
+  @apply text-[12px] text-[#919bab] font-medium
+}
+.signalAlmList > div .signal .info{
+  @apply w-full flex gap-3 items-center
+}
+.signalAlmList > div .signal .info .date{
+  @apply text-[10px] text-[#919bab] font-medium
+}
+.signalAlmList > div .signal .info .price{
+  @apply text-[12px] text-[#0c0c20] font-semibold
+}
