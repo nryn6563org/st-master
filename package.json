@@ -16,6 +16,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/moment": "^1.6.1",
+    "autocompleter": "^9.1.2",
     "cookie-universal-nuxt": "^2.2.2",
     "core-js": "^3.25.3",
     "eventbus": "0.0.3",

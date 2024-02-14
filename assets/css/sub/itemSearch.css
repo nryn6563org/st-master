@@ -20,7 +20,7 @@
   @apply w-full pt-6 px-2.5 relative 
 }
 .searchArea .inputArea input{
-  @apply w-full h-[64px] border-[3px] border-[#0c0c20] rounded-full bg-white p-[0_48px_0_24px]
+  @apply w-full h-[64px] border-[3px] border-[#0c0c20] rounded-full bg-white p-[0_48px_0_24px] text-[16px] text-[#FF505A] font-semibold
   placeholder:text-[14px] placeholder:font-semibold placeholder:text-[#919bab]
 }
 .searchArea .inputArea button{
@@ -40,4 +40,23 @@
 }
 .favItemList .itemList .list .num{
   @apply text-[12px] font-medium text-[#919bab]
+}
+
+.autocomplete {
+  @apply bg-white z-40 mt-2 shadow-itemList rounded-[10px] border-[2px] border-[#0c0c20] p-6 max-h-[234px] h-[234px] overflow-y-auto flex flex-col gap-6 !important
+}
+.autocomplete > div{
+  @apply w-full flex h-[18px] gap-2 items-center
+}
+.autocomplete > div > div:first-child{
+  @apply text-[18px] leading-[18px] text-black font-medium
+}
+.autocomplete > div > div:first-child strong{
+  @apply text-[#ff505a] font-[800]
+}
+.autocomplete > div > div:last-child{
+  @apply text-[12px] leading-3 text-[#919bab] font-medium
+}
+.autocomplete > div > div:last-child strong{
+  @apply text-[#ff505a] font-[800]
 }

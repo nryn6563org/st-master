@@ -81,15 +81,7 @@
           </div>
           <!-- 비주얼영역 -->
 
-          <div class="inputArea">
-            <input id="autocomplete-input" type="text" placeholder="종목코드/종목명 (초성,중간어 지원)">
-            <button>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <circle cx="13.5" cy="12.5" r="8.5" fill="#FFE600" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.277 21.1626C17.7453 22.116 15.937 22.6667 14 22.6667C8.47715 22.6667 4 18.1895 4 12.6667C4 7.14384 8.47715 2.66669 14 2.66669C19.5228 2.66669 24 7.14384 24 12.6667C24 15.2876 22.9917 17.6731 21.3419 19.4563L28.9428 27.0572C29.4635 27.5779 29.4635 28.4221 28.9428 28.9428C28.4221 29.4635 27.5779 29.4635 27.0572 28.9428L19.277 21.1626ZM21.3333 12.6667C21.3333 16.7168 18.0501 20 14 20C9.94991 20 6.66667 16.7168 6.66667 12.6667C6.66667 8.6166 9.94991 5.33335 14 5.33335C18.0501 5.33335 21.3333 8.6166 21.3333 12.6667Z" fill="#1E202C" />
-              </svg>
-            </button>
-          </div>
+          <ItemSearch></ItemSearch>
           <!-- 입력영역 -->
         </div>
         <!-- 검색영역 -->
@@ -108,11 +100,13 @@
 <script>
 import Modal from '~/components/modal/ModalWrap'
 import ItemList from '~/components/search/ItemList'
+import ItemSearch from '~/components/search/ItemSearch'
 
 export default {
   components: {
     Modal,
-    ItemList
+    ItemList,
+    ItemSearch
   },
   data() {
     return {

@@ -1,13 +1,13 @@
 /*
-    JavaScript autoComplete v1.0.4
+    JavaScript AutoComplete v1.0.4
     Copyright (c) 2014 Simon Steinberger / Pixabay
-    GitHub: https://github.com/Pixabay/JavaScript-autoComplete
+    GitHub: https://github.com/Pixabay/JavaScript-AutoComplete
     License: http://www.opensource.org/licenses/mit-license.php
 */
 
-const autoComplete = (function () {
+const AutoComplete = (function () {
   // "use strict";
-  function autoComplete(options) {
+  function AutoComplete(options) {
     if (!document.querySelector) { return }
 
     // helpers
@@ -42,27 +42,27 @@ const autoComplete = (function () {
       menuClass: '',
       renderItem: function (item, search) {
         // escape special characters
-        search = search.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+        search = search.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')
         const re = new RegExp('(' + search.split(' ').join('|') + ')', 'gi')
-        return '<div class="autocomplete-suggestion" data-val="' + item + '">' + item.replace(re, '<b>$1</b>') + '</div>'
+        return '<div class="AutoComplete-suggestion" data-val="' + item + '">' + item.replace(re, '<b>$1</b>') + '</div>'
       },
       onSelect: function (e, term, item) {}
     }
     for (const k in options) {
-      if (options.hasOwnProperty(k)) { o[k] = options[k] }
+      if (options.prototype.hasOwnProperty.call(options, k)) { o[k] = options[k] }
     }
 
     // init
     const elems = typeof o.selector === 'object' ? [o.selector] : document.querySelectorAll(o.selector)
     for (let i = 0; i < elems.length; i++) {
-      var that = elems[i]
+      const that = elems[i]
 
       // create suggestions container "sc"
       that.sc = document.createElement('div')
-      that.sc.className = 'autocomplete-suggestions ' + o.menuClass
+      that.sc.className = 'AutoComplete-suggestions ' + o.menuClass
 
-      that.autocompleteAttr = that.getAttribute('autocomplete')
-      that.setAttribute('autocomplete', 'off')
+      that.AutoCompleteAttr = that.getAttribute('AutoComplete')
+      that.setAttribute('AutoComplete', 'off')
       that.cache = {}
       that.last_val = ''
 
@@ -76,7 +76,7 @@ const autoComplete = (function () {
           if (!that.sc.maxHeight) {
             that.sc.maxHeight = parseInt((window.getComputedStyle ? getComputedStyle(that.sc, null) : that.sc.currentStyle).maxHeight)
           }
-          if (!that.sc.suggestionHeight) { that.sc.suggestionHeight = that.sc.querySelector('.autocomplete-suggestion').offsetHeight }
+          if (!that.sc.suggestionHeight) { that.sc.suggestionHeight = that.sc.querySelector('.AutoComplete-suggestion').offsetHeight }
           if (that.sc.suggestionHeight) {
             if (!next) { that.sc.scrollTop = 0 } else {
               const scrTop = that.sc.scrollTop
@@ -90,10 +90,10 @@ const autoComplete = (function () {
       document.body.appendChild(that.sc)
 
       live(
-        'autocomplete-suggestion',
+        'AutoComplete-suggestion',
         'mouseleave',
         function (e) {
-          const sel = that.sc.querySelector('.autocomplete-suggestion.selected')
+          const sel = that.sc.querySelector('.AutoComplete-suggestion.selected')
           if (sel) {
             setTimeout(function () {
               sel.className = sel.className.replace('selected', '')
@@ -104,10 +104,10 @@ const autoComplete = (function () {
       )
 
       live(
-        'autocomplete-suggestion',
+        'AutoComplete-suggestion',
         'mouseover',
         function (e) {
-          const sel = that.sc.querySelector('.autocomplete-suggestion.selected')
+          const sel = that.sc.querySelector('.AutoComplete-suggestion.selected')
           if (sel) { sel.className = sel.className.replace('selected', '') }
           this.className += ' selected'
         },
@@ -115,10 +115,10 @@ const autoComplete = (function () {
       )
 
       live(
-        'autocomplete-suggestion',
+        'AutoComplete-suggestion',
         'mousedown',
         function (e) {
-          if (hasClass(this, 'autocomplete-suggestion')) {
+          if (hasClass(this, 'AutoComplete-suggestion')) {
             // else outside click
             const v = this.getAttribute('data-val')
             that.value = v
@@ -130,12 +130,13 @@ const autoComplete = (function () {
       )
 
       that.blurHandler = function () {
+        let overSb
         try {
-          var over_sb = document.querySelector('.autocomplete-suggestions:hover')
+          overSb = document.querySelector('.AutoComplete-suggestions:hover')
         } catch (e) {
-          var over_sb = 0
+          overSb = 0
         }
-        if (!over_sb) {
+        if (!overSb) {
           that.last_val = that.value
           that.sc.style.display = 'none'
           setTimeout(function () {
@@ -149,7 +150,7 @@ const autoComplete = (function () {
       }
       addEvent(that, 'blur', that.blurHandler)
 
-      var suggest = function (data) {
+      const suggest = function (data) {
         const val = that.value
         that.cache[val] = data
         if (data.length && val.length >= o.minChars) {
@@ -163,15 +164,15 @@ const autoComplete = (function () {
       that.keydownHandler = function (e) {
         const key = window.event ? e.keyCode : e.which
         // down (40), up (38)
-        if ((key == 40 || key == 38) && that.sc.innerHTML) {
+        if ((key === 40 || key === 38) && that.sc.innerHTML) {
           let next
-          var sel = that.sc.querySelector('.autocomplete-suggestion.selected')
+          const sel = that.sc.querySelector('.AutoComplete-suggestion.selected')
           if (!sel) {
-            next = key == 40 ? that.sc.querySelector('.autocomplete-suggestion') : that.sc.childNodes[that.sc.childNodes.length - 1] // first : last
+            next = key === 40 ? that.sc.querySelector('.AutoComplete-suggestion') : that.sc.childNodes[that.sc.childNodes.length - 1] // first : last
             next.className += ' selected'
             that.value = next.getAttribute('data-val')
           } else {
-            next = key == 40 ? sel.nextSibling : sel.previousSibling
+            next = key === 40 ? sel.nextSibling : sel.previousSibling
             if (next) {
               sel.className = sel.className.replace('selected', '')
               next.className += ' selected'
@@ -184,16 +185,12 @@ const autoComplete = (function () {
           }
           that.updateSC(0, next)
           return false
-        }
-        // esc
-        else if (key == 27) {
+        } else if (key === 27) {
           that.value = that.last_val
           that.sc.style.display = 'none'
-        }
-        // enter
-        else if (key == 13 || key == 9) {
-          var sel = that.sc.querySelector('.autocomplete-suggestion.selected')
-          if (sel && that.sc.style.display != 'none') {
+        } else if (key === 13 || key === 9) {
+          const sel = that.sc.querySelector('.AutoComplete-suggestion.selected')
+          if (sel && that.sc.style.display !== 'none') {
             o.onSelect(e, sel.getAttribute('data-val'), sel)
             setTimeout(function () {
               that.sc.style.display = 'none'
@@ -205,10 +202,10 @@ const autoComplete = (function () {
 
       that.keyupHandler = function (e) {
         const key = window.event ? e.keyCode : e.which
-        if (!key || ((key < 35 || key > 40) && key != 13 && key != 27)) {
+        if (!key || ((key < 35 || key > 40) && key !== 13 && key !== 27)) {
           const val = that.value
           if (val.length >= o.minChars) {
-            if (val != that.last_val) {
+            if (val !== that.last_val) {
               that.last_val = val
               clearTimeout(that.timer)
               if (o.cache) {
@@ -253,19 +250,19 @@ const autoComplete = (function () {
         removeEvent(that, 'focus', that.focusHandler)
         removeEvent(that, 'keydown', that.keydownHandler)
         removeEvent(that, 'keyup', that.keyupHandler)
-        if (that.autocompleteAttr) { that.setAttribute('autocomplete', that.autocompleteAttr) } else { that.removeAttribute('autocomplete') }
+        if (that.AutoCompleteAttr) { that.setAttribute('AutoComplete', that.AutoCompleteAttr) } else { that.removeAttribute('AutoComplete') }
         document.body.removeChild(that.sc)
         that = null
       }
     }
   }
-  return autoComplete
+  return AutoComplete
 })();
 
 (function () {
-  if (typeof define === 'function' && define.amd) {
-    define('autoComplete', function () {
-      return autoComplete
+  if (typeof window.AutoComplete === 'function' && window.AutoComplete.amd) {
+    window.AutoComplete('AutoComplete', function () {
+      return AutoComplete
     })
-  } else if (typeof module !== 'undefined' && module.exports) { module.exports = autoComplete } else { window.autoComplete = autoComplete }
+  } else if (typeof module !== 'undefined' && module.exports) { module.exports = AutoComplete } else { window.AutoComplete = AutoComplete }
 })()
