@@ -134,7 +134,7 @@ export default {
     }
     store.commit('setPageTitle', '시황 알림 설정')
     store.commit('setCustomButtonText', newCustomButtonText)
-    store.commit('setCustomButtonLink', '/itemSetting/')
+    store.commit('setCustomButtonLink', '/itemSetting')
     return {}
   }
 }
