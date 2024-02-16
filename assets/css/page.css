@@ -1,0 +1,16 @@
+#pageHeader{
+  @apply w-full flex justify-end py-5 bg-[#FFE500] px-4
+}
+#itemSignal{
+  @apply bg-[#ffe500]
+}
+
+.card .signalCard{
+  @apply w-[calc(100%-24px)] mx-auto bg-[#495062] rounded-t-[20px] p-[22px_16px_0_24px] h-[97px] flex
+}
+.mySignalInfo{
+  @apply w-full bg-white px-3
+}
+.mySignalInfo > div{
+  @apply w-full h-[53px] rounded-b-[20px] bg-[#ffe500] px-7 flex items-center justify-between
+}

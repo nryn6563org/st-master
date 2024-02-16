@@ -9,14 +9,20 @@
 html,body{
   @apply h-full m-0
 }
+body.modal-open{
+  @apply overflow-hidden
+}
 #__nuxt,#__layout{
   @apply h-full m-0
 }
 #wrap{
-  @apply h-full w-full
+  @apply h-full w-full max-w-[425px] mx-auto
 }
 #container{
   @apply min-h-[calc(100%-212px)] bg-[#f0f0f0] w-full
+}
+#container.page{
+  @apply min-h-[calc(100%-171px)]
 }
 #container.sub{
   @apply min-h-[calc(100%-186px)]
@@ -64,4 +70,7 @@ em{
 }
 .btn-gry{
   @apply bg-[#EAEEF2] text-[#B0B8C3]
+}
+.btn-default{
+  @apply bg-[#495062] text-white
 }

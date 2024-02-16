@@ -9,6 +9,10 @@ module.exports = {
     },
     boxShadow: {
       itemList: ['0px 4px 6px 0px rgba(0, 0, 0, 0.07)']
+    },
+    screens: {
+      md: '768px',
+      lg: '1024px'
     }
   },
   plugins: []

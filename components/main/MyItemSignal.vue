@@ -275,7 +275,7 @@ export default {
       const scrollTriggerRect = scrollTrigger.getBoundingClientRect()
 
       // 원하는 스크롤 도달 위치에 따라 showFloatingBtnGroup 값을 변경
-      this.showFloatingBtnGroup = scrollTriggerRect.bottom < 0
+      this.showFloatingBtnGroup = scrollTriggerRect.bottom <= 0
     },
     settingToPage() {
       this.$router.push('/itemSetting')

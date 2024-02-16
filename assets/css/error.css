@@ -1,0 +1,16 @@
+.notPage{
+  @apply w-full flex flex-col justify-center items-center h-[302px] bg-[#ffe500] gap-4
+}
+.notPage strong{
+  @apply text-[24px] tracking-[-0.56px] font-semibold text-[#0c0c20]
+}
+.notPage span{
+  @apply text-[16px] font-medium text-[#0c0c20] leading-4
+}
+
+.btn-box{
+  @apply mt-[112px] w-full px-3 pb-10
+}
+.btn-box button{
+  @apply h-[56px] w-full text-[16px] font-medium font-ibm
+}
