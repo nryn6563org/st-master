@@ -1,37 +1,37 @@
 <template>
   <div>
     <div class="groupModalBtn">
-      <button class="btn btn-default" @click="openModal('announcement')">
+      <button class="btn btn-default" @click="openSModal('announcement')">
         시그널 안내
       </button>
-      <button class="btn btn-default" @click="openModal('itemAdd1')">
+      <button class="btn btn-default" @click="openSModal('itemAdd1')">
         나의 종목 등록1
       </button>
-      <button class="btn btn-default" @click="openModal('itemAdd2')">
+      <button class="btn btn-default" @click="openSModal('itemAdd2')">
         나의 종목 등록2
       </button>
-      <button class="btn btn-default" @click="openModal('itemSetting')">
+      <button class="btn btn-default" @click="openSModal('itemSetting')">
         나의 종목 설정
       </button>
-      <button class="btn btn-default" @click="openModal('alarmSetting1')">
+      <button class="btn btn-default" @click="openSModal('alarmSetting1')">
         시황 알림 설정1
       </button>
-      <button class="btn btn-default" @click="openModal('alarmSetting2')">
+      <button class="btn btn-default" @click="openSModal('alarmSetting2')">
         시황 알림 설정2
       </button>
-      <button class="btn btn-default" @click="openModal('signalPfm1')">
+      <button class="btn btn-default" @click="openSModal('signalPfm1')">
         시그널 성과1
       </button>
-      <button class="btn btn-default" @click="openModal('signalPfm2')">
+      <button class="btn btn-default" @click="openSModal('signalPfm2')">
         시그널 성과2
       </button>
-      <button class="btn btn-default" @click="openModal('signalPfm3')">
+      <button class="btn btn-default" @click="openSModal('signalPfm3')">
         시그널 성과3
       </button>
-      <button class="btn btn-default" @click="openModal('signalPfm4')">
+      <button class="btn btn-default" @click="openSModal('signalPfm4')">
         시그널 성과4
       </button>
-      <button class="btn btn-default" @click="openModal('signalPfm5')">
+      <button class="btn btn-default" @click="openSModal('signalPfm5')">
         시그널 성과5
       </button>
     </div>
@@ -40,7 +40,7 @@
       class="alertModal"
       :modal-id="'announcement'"
       :view-modal="modals.announcement"
-      :close-modal="() => closeModal('announcement')"
+      :close-modal="() => closeSModal('announcement')"
     >
       <template #header>
         <strong>시그널 안내</strong>
@@ -58,7 +58,7 @@
           <!-- txt -->
 
           <div class="btnbox">
-            <button class="btn btn-ylw" @click="closeModal('announcement')">
+            <button class="btn btn-ylw" @click="closeSModal('announcement')">
               확 인
             </button>
           </div>
@@ -72,7 +72,7 @@
       class="alertModal"
       :modal-id="'itemAdd1'"
       :view-modal="modals.itemAdd1"
-      :close-modal="() => closeModal('itemAdd1')"
+      :close-modal="() => closeSModal('itemAdd1')"
     >
       <template #header>
         <strong>나의 종목 등록</strong>
@@ -90,7 +90,7 @@
           <!-- txt -->
 
           <div class="btnbox">
-            <button class="btn btn-ylw" @click="closeModal('itemAdd1')">
+            <button class="btn btn-ylw" @click="closeSModal('itemAdd1')">
               확 인
             </button>
           </div>
@@ -104,7 +104,7 @@
       class="alertModal"
       :modal-id="'itemAdd2'"
       :view-modal="modals.itemAdd2"
-      :close-modal="() => closeModal('itemAdd2')"
+      :close-modal="() => closeSModal('itemAdd2')"
     >
       <template #header>
         <strong>나의 종목 등록</strong>
@@ -121,7 +121,7 @@
           <!-- txt -->
 
           <div class="btnbox">
-            <button class="btn btn-ylw" @click="closeModal('itemAdd2')">
+            <button class="btn btn-ylw" @click="closeSModal('itemAdd2')">
               확 인
             </button>
           </div>
@@ -135,7 +135,7 @@
       class="alertModal"
       :modal-id="'itemSetting'"
       :view-modal="modals.itemSetting"
-      :close-modal="() => closeModal('itemSetting')"
+      :close-modal="() => closeSModal('itemSetting')"
     >
       <template #header>
         <strong>나의 종목 설정</strong>
@@ -166,7 +166,7 @@
 
       <template #footer>
         <div class="btn-group">
-          <button class="btn btn-grb" @click="closeModal('itemSetting')">
+          <button class="btn btn-grb" @click="closeSModal('itemSetting')">
             닫기
           </button>
           <button class="btn btn-ylw">시황 알림 설정</button>
@@ -179,7 +179,7 @@
       class="alertModal"
       :modal-id="'alarmSetting1'"
       :view-modal="modals.alarmSetting1"
-      :close-modal="() => closeModal('alarmSetting1')"
+      :close-modal="() => closeSModal('alarmSetting1')"
     >
       <template #header>
         <strong>시황 알림 설정</strong>
@@ -205,7 +205,7 @@
           <!--  -->
 
           <div class="btnbox">
-            <button class="btn btn-ylw" @click="closeModal('alarmSetting1')">
+            <button class="btn btn-ylw" @click="closeSModal('alarmSetting1')">
               확 인
             </button>
           </div>
@@ -220,7 +220,7 @@
       class="alertModal"
       :modal-id="'alarmSetting2'"
       :view-modal="modals.alarmSetting2"
-      :close-modal="() => closeModal('alarmSetting2')"
+      :close-modal="() => closeSModal('alarmSetting2')"
     >
       <template #header>
         <strong>시황 알림 설정</strong>
@@ -242,7 +242,7 @@
           <!--  -->
 
           <div class="btnbox">
-            <button class="btn btn-ylw" @click="closeModal('alarmSetting2')">
+            <button class="btn btn-ylw" @click="closeSModal('alarmSetting2')">
               확 인
             </button>
           </div>
@@ -257,7 +257,7 @@
       class="alertModal"
       :modal-id="'signalPfm1'"
       :view-modal="modals.signalPfm1"
-      :close-modal="() => closeModal('signalPfm1')"
+      :close-modal="() => closeSModal('signalPfm1')"
     >
       <template #header>
         <strong>시그널 성과</strong>
@@ -287,7 +287,7 @@
           <!-- txtbox -->
 
           <div class="btnbox">
-            <button class="btn btn-ylw" @click="closeModal('signalPfm1')">
+            <button class="btn btn-ylw" @click="closeSModal('signalPfm1')">
               닫 기
             </button>
           </div>
@@ -301,7 +301,7 @@
       class="alertModal"
       :modal-id="'signalPfm2'"
       :view-modal="modals.signalPfm2"
-      :close-modal="() => closeModal('signalPfm3')"
+      :close-modal="() => closeSModal('signalPfm3')"
     >
       <template #header>
         <strong>시그널 성과</strong>
@@ -332,7 +332,7 @@
           <!-- txtbox -->
 
           <div class="btnbox">
-            <button class="btn btn-ylw" @click="closeModal('signalPfm2')">
+            <button class="btn btn-ylw" @click="closeSModal('signalPfm2')">
               닫 기
             </button>
           </div>
@@ -346,7 +346,7 @@
       class="alertModal"
       :modal-id="'signalPfm3'"
       :view-modal="modals.signalPfm3"
-      :close-modal="() => closeModal('signalPfm3')"
+      :close-modal="() => closeSModal('signalPfm3')"
     >
       <template #header>
         <strong>시그널 성과</strong>
@@ -376,7 +376,7 @@
           <!-- txtbox -->
 
           <div class="btnbox">
-            <button class="btn btn-ylw" @click="closeModal('signalPfm3')">
+            <button class="btn btn-ylw" @click="closeSModal('signalPfm3')">
               닫 기
             </button>
           </div>
@@ -390,7 +390,7 @@
       class="alertModal"
       :modal-id="'signalPfm4'"
       :view-modal="modals.signalPfm4"
-      :close-modal="() => closeModal('signalPfm4')"
+      :close-modal="() => closeSModal('signalPfm4')"
     >
       <template #header>
         <strong>시그널 성과</strong>
@@ -421,7 +421,7 @@
           <!-- txtbox -->
 
           <div class="btnbox">
-            <button class="btn btn-ylw" @click="closeModal('signalPfm4')">
+            <button class="btn btn-ylw" @click="closeSModal('signalPfm4')">
               닫 기
             </button>
           </div>
@@ -435,7 +435,7 @@
       class="alertModal"
       :modal-id="'signalPfm5'"
       :view-modal="modals.signalPfm5"
-      :close-modal="() => closeModal('signalPfm5')"
+      :close-modal="() => closeSModal('signalPfm5')"
     >
       <template #header>
         <strong>시그널 성과</strong>
@@ -466,7 +466,7 @@
           <!-- txtbox -->
 
           <div class="btnbox">
-            <button class="btn btn-ylw" @click="closeModal('signalPfm5')">
+            <button class="btn btn-ylw" @click="closeSModal('signalPfm5')">
               닫 기
             </button>
           </div>
@@ -512,10 +512,10 @@ export default {
     }
   },
   methods: {
-    openModal(modalId) {
+    openSModal(modalId) {
       this.$set(this.modals, modalId, true)
     },
-    closeModal(modalId) {
+    closeSModal(modalId) {
       this.$set(this.modals, modalId, false)
     }
   }
