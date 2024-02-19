@@ -216,7 +216,7 @@ export default {
           perTxt: true,
           symbol: '+',
           profitPercentage: '2.34',
-          prTxt: false,
+          prTxt: true,
           price: '18,750',
           signalClass: 'sig01'
         },

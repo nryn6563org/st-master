@@ -17,7 +17,7 @@
   @apply max-w-[50%] flex justify-end items-center gap-3 pr-3
 }
 .list-w .list > div:last-child .signal-info{
-  @apply flex flex-col gap-[6px]
+  @apply flex flex-col gap-[6px] items-end
 }
 .list-w .list > div:last-child .signal-info .txt{
   @apply leading-3 text-[12px] text-black flex gap-1 items-center justify-end
