@@ -66,11 +66,21 @@ em{
   @apply bg-[#FFE500] text-black
 }
 .btn-blk{
-  @apply bg-black text-[#FFE500]
+  @apply bg-[#0C0C20] text-[#FFE500]
 }
 .btn-gry{
   @apply bg-[#EAEEF2] text-[#B0B8C3]
 }
+.btn-grb{
+  @apply bg-[#E2E6EC] text-[#0C0C20]
+}
 .btn-default{
   @apply bg-[#495062] text-white
+}
+
+.groupModalBtn{
+  @apply flex w-full flex-col gap-2.5 px-10 py-[100px]
+}
+.groupModalBtn button{
+  @apply rounded-full h-10
 }

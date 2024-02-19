@@ -20,3 +20,90 @@
 .itemSearch .modal-content .modal-body{
   @apply w-full h-[calc(100%-52px)] overflow-y-auto
 }
+
+.alertModal .modal-content{
+  @apply w-[320px] rounded-[20px] overflow-hidden
+}
+.alertModal .modal-content .modal-header{
+  @apply w-full  bg-[#0c0c20] h-[56px] flex justify-center items-center
+}
+.alertModal .modal-content .modal-header strong{
+  @apply text-[16px] font-semibold text-[#ffe500] font-ibm
+}
+.alertModal .modal-content .modal-body{
+  @apply w-full bg-white py-10 px-2.5
+}
+.alertModal .modal-content .modal-footer{
+  @apply w-full 
+}
+.alertModal .modal-content .modal-footer .btn-group{
+  @apply flex h-[56px]
+}
+.alertModal .modal-content .modal-footer .btn-group button{
+  @apply h-full text-[16px] font-semibold font-ibm
+}
+.alertModal .modal-content .modal-footer .btn-group button:first-child{
+  @apply w-[140px]
+}
+.alertModal .modal-content .modal-footer .btn-group button:last-child{
+  @apply w-[calc(100%-140px)]
+}
+
+.alert_content{
+  @apply w-full
+}
+.alert_content .visual{
+  @apply flex w-full justify-center
+}
+
+.alert_content .txt{
+  @apply w-full text-center mt-6
+}
+.alert_content .txt.txt_top{
+  @apply mt-2 mb-4 h-10 !important
+}
+.alert_content .txt.txt_top2{
+  @apply mt-2 mb-4 !important
+}
+.alert_content .txt.txt_s{
+  @apply mt-9
+}
+.alert_content .txt.txt_m{
+  @apply mt-4
+}
+.alert_content .txt strong{
+  @apply block text-[24px] text-[#0c0c20] font-ibm leading-9 tracking-[-0.8px] font-bold
+}
+.alert_content .txt.txt_s strong{
+  @apply text-[20px] font-ibm leading-5
+}
+.alert_content .txt strong em{
+  @apply relative inline-block z-10 after:absolute after:w-full after:h-3 after:bg-[#ffe500] after:left-0 after:bottom-[5px] after:z-[-1]
+}
+.alert_content .txt.txt_s strong em{
+  @apply after:bottom-[1px]
+}
+.alert_content .txt span{
+  @apply text-[18px] leading-[18px] block font-medium text-[#0c0c20] pb-2.5 pt-1
+}
+.alert_content .txt.txt_s span{
+  @apply pt-4 text-[16px] leading-4 pb-0
+}
+.alert_content .txt.txt_m span{
+  @apply pt-4 text-[16px] leading-4 pb-0
+}
+.alert_content .txtbox{
+  @apply w-full border-[1px] rounded-[10px] border-[#dbdbdb] py-4 px-3 mt-6 text-center text-[14px] font-medium text-[#495062] mb-2.5
+}
+.alert_content .txtbox.txtbox_s{
+  @apply text-[12px] leading-[16px] font-normal tracking-[-0.1px]
+}
+.alert_content .txtbox em{
+  @apply font-[800]
+}
+.alert_content .btnbox{
+  @apply w-full px-[30px] mt-[30px]
+}
+.alert_content .btnbox button{
+  @apply w-full rounded-full text-[16px] font-medium font-ibm h-[56px]
+}

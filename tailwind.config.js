@@ -8,7 +8,8 @@ module.exports = {
       pretendard: ['Pretendard', 'sans-serif']
     },
     boxShadow: {
-      itemList: ['0px 4px 6px 0px rgba(0, 0, 0, 0.07)']
+      itemList: ['0px 4px 6px 0px rgba(0, 0, 0, 0.07)'],
+      infoList: ['0px 2px 5px 0px rgba(0, 0, 0, 0.10)']
     },
     screens: {
       md: '768px',

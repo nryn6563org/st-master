@@ -1,0 +1,87 @@
+
+#itemSignal .obj{
+  @apply w-full flex flex-col gap-2 px-6
+}
+#itemSignal .obj strong{
+  @apply leading-[18px] text-[22px] tracking-[-0.88px] font-ibm font-medium text-[#0c0c20]
+}
+#itemSignal .obj span{
+  @apply text-[14px] text-[#8D9299] font-semibold leading-[14px]
+}
+
+#itemSignal > button{
+  @apply absolute bg-[#ffe500] top-1 right-3 w-[112px] h-8 border-[1px] border-[#0c0c20] rounded-full flex gap-2 items-center justify-center text-[12px] text-[#0c0c20] font-semibold z-20
+}
+
+
+.card{
+  @apply block w-full mt-5
+}
+.card .signalCard {
+  @apply w-[calc(100%-24px)] mx-auto bg-[#495062] rounded-t-[20px] p-[0_16px_0_24px] h-[97px] flex justify-between items-center
+}
+
+.card .signalCard .sig{
+  @apply w-[54px] h-[54px] flex items-center justify-center border-[5px] rounded-[20px_0] text-[16px] font-semibold text-white font-ibm
+}
+.card .signalCard .sig.sig01{
+  @apply border-[#FF505A]
+}
+.card .signalCard .sig.sig02{
+  @apply border-[#3A89FF]
+}
+
+.card .signalCard .signal-info{
+  @apply flex flex-col w-[170px] h-[97px] justify-center items-end gap-3 pt-2.5
+}
+.card .signalCard .signal-info > div{
+  @apply w-full flex justify-between h-[14px] items-center
+}
+.card .signalCard .signal-info > div span:first-child{
+  @apply text-[12px] font-medium text-white
+}
+.card .signalCard .signal-info > div .prc{
+  @apply text-[14px] text-[#FFE500] font-semibold
+}
+.card .signalCard .signal-info > div .prc em{
+  @apply text-[18px] font-[800]
+}
+.card .signalCard .signal-info > div .date{
+  @apply text-[12px] font-medium text-[#B0B8C3]
+}
+.card .signalCard .signal-info > div .per{
+  @apply text-[14px] font-semibold
+}
+.card .signalCard .signal-info > div .per em{
+  @apply text-[20px] font-[800]
+}
+.card .signalCard .signal-info > div .buy{
+  @apply text-[14px] font-semibold text-[#eaeef2]
+}
+.card .signalCard .signal-info > div .buy em{
+  @apply text-[16px] font-[900]
+}
+.card .signalCard .signal-info > div .wasDate{
+  @apply text-[14px] font-semibold text-[#ffe500]
+}
+
+.mySignalInfo{
+  @apply w-full bg-[#f0f0f0] px-3
+}
+.mySignalInfo > div{
+  @apply w-full h-[53px] rounded-b-[20px] bg-[#ffe500] px-7 flex items-center justify-between
+}
+.mySignalInfo > div .myDate{
+  @apply text-black text-[14px] font-semibold
+}
+.mySignalInfo > div .myDate em{
+  @apply text-[20px] font-[800]
+}
+.mySignalInfo > div .myPer{
+  @apply text-[14px] text-[#0c0c20] font-semibold
+}
+.mySignalInfo > div .myPer span{
+  }
+.mySignalInfo > div .myPer span em{
+  @apply text-[20px] font-[800]
+}

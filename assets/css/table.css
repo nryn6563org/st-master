@@ -1,0 +1,45 @@
+.infoTable{
+  @apply w-full
+}
+.infoTable thead{
+  @apply bg-[#FFE500] border-b-[1px] border-[#495062]
+}
+.infoTable thead tr th{
+  @apply h-[42px] text-center text-[14px] text-[#0c0c20] font-semibold
+}
+
+.infoTable tbody{
+  @apply bg-white
+}
+.infoTable tbody tr td > div{
+  @apply relative w-full flex items-center h-[62px]
+  after:absolute after:bottom-0 after:left-[15px] after:w-[320px] after:h-[1px] after:border-t-[1px] after:border-dashed after:border-[#919bab]
+}
+.infoTable tbody tr:last-child td > div{
+  @apply after:hidden;
+}
+
+.infoTable tbody tr td > div .signal{
+  @apply w-[72px] flex justify-center
+}
+.infoTable tbody tr td > div .signal .sig{
+  @apply w-10 h-10 flex items-center justify-center border-[3px] rounded-[14px_0] text-[14px] font-ibm font-semibold
+}
+.infoTable tbody tr td > div .signal .sig.sig01{
+  @apply border-[#FFC1C1] text-[#FF505A]
+}
+.infoTable tbody tr td > div .signal .sig.sig02{
+  @apply border-[#AFCFFF] text-[#3A89FF]
+}
+.infoTable tbody tr td > div .date{
+  @apply w-[92px] text-center text-[12px] font-medium leading-3 text-[#0c0c20]
+}
+.infoTable tbody tr td > div .price{
+  @apply w-[87px] text-end pr-[6px] text-[14px] font-[800] leading-[14px] text-[#0c0c20]
+}
+.infoTable tbody tr td > div .per{
+  @apply w-[calc(100%-251px)] text-end pr-[6px] text-[10px] font-[900]
+}
+.infoTable tbody tr td > div .per em{
+  @apply text-[14px]
+}

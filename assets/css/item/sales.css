@@ -1,0 +1,17 @@
+
+#itemInfo .infoList{
+  @apply pt-4 w-full flex flex-col gap-2.5
+}
+#itemInfo .infoList > div{
+  @apply w-full flex gap-2.5 items-center
+}
+#itemInfo .infoList > div .cont{
+  @apply w-[312px] h-[53px] bg-white rounded-[20px_0] shadow-infoList px-2 
+  flex items-center text-[14px] font-semibold tracking-[-0.56px] text-[#495062]
+}
+#itemInfo .infoList > div .cont span{
+  @apply text-[#f90] tracking-[-0.28px]
+}
+#itemInfo .infoList > div .cont span em{
+  @apply font-[800] tracking-[0] text-[20px]
+}

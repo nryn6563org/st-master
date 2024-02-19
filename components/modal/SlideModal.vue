@@ -6,7 +6,7 @@
     @before-enter="beforeEnter"
     @before-leave="beforeLeave"
   >
-    <div v-if="showModal" class="modal animate__animated animate__faster" @click="closeModal">
+    <div v-if="viewModal" class="modal animate__animated" @click="closeModal">
       <div
         class="modal-content animate__animated animate__faster"
         :class="contentClass"
@@ -27,8 +27,8 @@
 </template>
 
 <script>
-const ANIMATE_ZOOM_IN = 'animate__zoomIn'
-const ANIMATE_FADE_OUT = 'animate__fadeOut'
+const ANIMATE_SLIDE_IN = 'animate__slideInDown'
+const ANIMATE_BOUNCE_OUT = 'animate__bounceOutUp'
 
 export default {
   props: {
@@ -36,10 +36,10 @@ export default {
       type: String,
       required: true
     },
-    showModal: {
+    viewModal: {
       type: Boolean,
-      required: true,
-      default: false
+      default: false,
+      required: true
     },
     closeModal: {
       type: Function,
@@ -60,7 +60,7 @@ export default {
   },
   data() {
     return {
-      contentClass: ANIMATE_ZOOM_IN
+      contentClass: ANIMATE_SLIDE_IN
     }
   },
   methods: {
@@ -68,12 +68,14 @@ export default {
       const content = el.querySelector('.modal-content')
       content.classList.remove(remove)
       content.classList.add(add)
+
+      document.body.style.overflow = add === ANIMATE_SLIDE_IN ? 'hidden' : ''
     },
     beforeEnter(el) {
-      this.toggleClass(el, ANIMATE_ZOOM_IN, ANIMATE_FADE_OUT)
+      this.toggleClass(el, ANIMATE_SLIDE_IN, ANIMATE_BOUNCE_OUT)
     },
     beforeLeave(el) {
-      this.toggleClass(el, ANIMATE_FADE_OUT, ANIMATE_ZOOM_IN)
+      this.toggleClass(el, ANIMATE_BOUNCE_OUT, ANIMATE_SLIDE_IN)
     }
   }
 }
