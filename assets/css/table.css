@@ -13,7 +13,7 @@
 }
 .infoTable tbody tr td > div{
   @apply relative w-full flex items-center h-[62px]
-  after:absolute after:bottom-0 after:left-[15px] after:w-[320px] after:h-[1px] after:border-t-[1px] after:border-dashed after:border-[#919bab]
+  after:absolute after:bottom-0 after:left-[15px] after:w-[calc(100%-30px)] after:h-[1px] after:border-t-[1px] after:border-dashed after:border-[#919bab]
 }
 .infoTable tbody tr:last-child td > div{
   @apply after:hidden;
