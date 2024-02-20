@@ -6,7 +6,7 @@
   @apply w-full flex gap-2.5 items-center
 }
 #itemInfo .infoList > div .cont{
-  @apply w-[312px] h-[53px] bg-white rounded-[20px_0] shadow-infoList px-2 
+  @apply w-[calc(100%-50px)] h-[53px] bg-white rounded-[20px_0] shadow-infoList px-2 
   flex items-center text-[14px] font-semibold tracking-[-0.56px] text-[#495062]
 }
 #itemInfo .infoList > div .cont span{
