@@ -67,6 +67,8 @@
         :accuracy="80"
         :highRate="123"
         :accumulate="223.6"
+        :salesNumber="23"
+        :holdingNumber="23"
       ></SalesPerformance>
     </section>
     <!-- 종목정보 -->
