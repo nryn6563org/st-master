@@ -27,7 +27,7 @@ export default {
         rel: 'stylesheet',
         as: 'style',
         crossorigin: 'anonymous',
-        href: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css'
+        href: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css'
       },
       {
         rel: 'stylesheet',
