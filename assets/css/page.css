@@ -21,10 +21,13 @@
 }
 
 #signalChart > .chart .chart-radio{
-  @apply w-full mb-2.5 px-[2px]
+  @apply w-full mb-2.5 px-[2px] flex justify-end
 }
 #signalChart > .chart .chart-radio label{
-  @apply mr-2.5
+  @apply mr-2.5 ml-1
+}
+#signalChart > .chart .chart-radio label:last-child{
+  @apply mr-0
 }
 
 #signalChart .more{
