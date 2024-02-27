@@ -20,6 +20,13 @@
   @apply w-full mt-4 mb-8
 }
 
+#signalChart > .chart .chart-radio{
+  @apply w-full mb-2.5 px-[2px]
+}
+#signalChart > .chart .chart-radio label{
+  @apply mr-2.5
+}
+
 #signalChart .more{
   @apply w-full p-[30px_0_60px]
 }
