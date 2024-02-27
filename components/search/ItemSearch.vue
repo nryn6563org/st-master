@@ -102,6 +102,18 @@ export default {
       })
 
       document.querySelector('input').focus()
+
+      const inputElement = document.getElementById('defaultInput')
+      inputElement.addEventListener('click', () => {
+        // 입력 요소가 문서에 대해 상대적인 위치 계산
+        const inputRect = inputElement.getBoundingClientRect()
+
+        // 화면 상단으로 스크롤
+        document.querySelector('.modal-body').scrollTo({
+          top: inputRect.top - 62,
+          behavior: 'smooth' // 부드러운 스크롤링을 위해 'auto' 또는 'smooth'를 사용할 수 있습니다.
+        })
+      })
       console.log('Selected item:', selectedData)
     }
   }

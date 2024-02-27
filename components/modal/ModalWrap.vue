@@ -68,6 +68,8 @@ export default {
       const content = el.querySelector('.modal-content')
       content.classList.remove(remove)
       content.classList.add(add)
+
+      document.body.style.overflow = add === ANIMATE_ZOOM_IN ? 'hidden' : ''
     },
     beforeEnter(el) {
       this.toggleClass(el, ANIMATE_ZOOM_IN, ANIMATE_FADE_OUT)

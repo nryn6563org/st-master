@@ -27,7 +27,7 @@
   @apply absolute top-10 right-[44px] z-20
 }
 .favItemList{
-  @apply w-full pt-8 px-3
+  @apply w-full min-h-[480px] pt-8 px-3
 }
 .favItemList .itemList{
   @apply w-[calc(100%-30px)] mx-[15px] mt-[9px] border-t-[3px] border-[#0c0c20] py-4 flex flex-col gap-6

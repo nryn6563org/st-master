@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="m-wrap">
     <button @click="openModal('beforeSignal')"></button>
     <Modal
       class="itemSearch"

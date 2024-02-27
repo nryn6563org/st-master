@@ -18,7 +18,7 @@
       <!-- price -->
 
       <div class="date">
-        <span>2024.01.12 12:23</span>
+        <span>01.12 12:23</span>
       </div>
       <!-- date&time -->
     </div>
@@ -42,7 +42,7 @@
       <!-- price -->
 
       <div class="date">
-        <span>2024.01.12 12:23</span>
+        <span>01.12 12:23</span>
       </div>
       <!-- date&time -->
     </div>
@@ -66,7 +66,7 @@
       <!-- price -->
 
       <div class="date">
-        <span>2024.01.12 12:23</span>
+        <span>01.12 12:23</span>
       </div>
       <!-- date&time -->
     </div>

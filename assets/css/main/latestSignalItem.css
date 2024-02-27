@@ -1,5 +1,5 @@
 #latestSignalItem{
-  @apply relative w-full bg-white p-[24px_12px]
+  @apply relative w-full bg-white p-[24px_12px_32px]
 }
 
 .signal-tab-w{
@@ -30,10 +30,10 @@
   @apply bg-[#EBEDFF]
 }
 .signal-list-w .list .name{
-  @apply flex w-full flex-col gap-[2px] pt-[9px]
+  @apply flex w-full flex-col gap-1 pt-[9px]
 }
 .signal-list-w .list .name .obj{
-  @apply text-[12px] font-bold text-[#0c0c20] font-ibm h-3 leading-3 tracking-[-0.48px]
+  @apply text-[14px] font-semibold text-[#0c0c20] font-ibm h-3 leading-3 tracking-[-0.48px]
 }
 .signal-list-w .list .name .num{
   @apply text-[10px] font-medium font-ibm h-[10px] leading-[10px] text-[#B0B8C3]
