@@ -33,10 +33,10 @@
   after:content-[''] after:absolute after:h-[7px] after:w-full after:bottom-0 after:left-0 after:bg-[#ffee56] after:z-[-1]
 }
 .list-w .list > div:last-child .signal-info .price em{
-  @apply font-[600] text-[14px] 
+  @apply font-[600] text-[14px]
 }
 .list-w .list > div:last-child .signal{
-  @apply w-[54px] h-[54px] border-[5px] rounded-[20px_0_20px_0] flex items-center justify-center font-ibm text-[16px] font-medium
+  @apply w-[54px] h-[54px] border-[5px] rounded-[20px_0_20px_0] flex items-center justify-center font-ibm text-[16px] border-[#B0B8C3] font-semibold text-[#B0B8C3]
 }
 .list-w .list > div:last-child .signal.sig01{
   @apply text-[#ff505a] border-[#FFC1C1]

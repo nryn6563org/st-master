@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     getSignalText() {
-      return this.signalClass === 'sig01' ? '매수' : this.signalClass === 'sig02' ? '매도' : this.signalText
+      return this.signalClass === 'sig01' ? '매수' : this.signalClass === 'sig02' ? '매도' : this.signalClass === '' ? '-' : this.signalText
     }
   }
 }

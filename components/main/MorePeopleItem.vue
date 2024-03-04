@@ -61,7 +61,7 @@ export default {
           percent: '2.34',
           date: '45',
           stash: '보유중',
-          signalClass: 'sig01'
+          signalClass: ''
         },
         {
           name: '삼성전자',

@@ -22,7 +22,7 @@
   @apply w-full h-3 leading-3 text-[12px] text-[#919bab] font-medium
 }
 .p-list-w .list .per{
-  @apply w-[76px] 
+  @apply w-[76px]
 }
 .p-list-w .list .per > div{
   @apply w-full flex flex-col items-center justify-center gap-[1px]
@@ -42,8 +42,14 @@
 .p-list-w .list .stash{
 @apply flex w-[48px] justify-center leading-[14px] text-[12px] text-black text-center
 }
+.p-list-w .list .stash span.red{
+  @apply font-[900] leading-[14px]
+}
+.p-list-w .list .stash span.blue{
+  @apply font-[900] leading-[14px]
+}
 .p-list-w .list .signal{
-  @apply w-10 h-10 rounded-[14px_0] border-[3px] flex items-center justify-center text-[14px] font-semibold font-ibm
+  @apply w-10 h-10 rounded-[14px_0] border-[3px] flex items-center justify-center text-[14px] font-semibold font-ibm border-[#B0B8C3] text-[#B0B8C3]
 }
 .p-list-w .list .sig01{
   @apply border-[#FFC1C1] text-[#FF505A]

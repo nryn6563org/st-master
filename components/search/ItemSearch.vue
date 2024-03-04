@@ -101,7 +101,7 @@ export default {
         }
       })
 
-      document.querySelector('input').focus()
+      // document.querySelector('input').focus()
 
       const inputElement = document.getElementById('defaultInput')
       inputElement.addEventListener('click', () => {

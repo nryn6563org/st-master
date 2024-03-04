@@ -206,7 +206,7 @@ export default {
           profitPercentage: '2.34',
           prTxt: false,
           price: '18,750',
-          signalClass: 'sig02'
+          signalClass: ''
         },
         {
           bullet: false,
