@@ -1,5 +1,5 @@
 #itemSetting{
-  @apply w-full relative
+  @apply w-full relative h-full
 }
 #itemSetting .top{
   @apply bg-[#ffe500] w-full pt-1 pb-4 flex justify-center
@@ -9,7 +9,7 @@
 }
 
 .my-item-list{
-  @apply w-full p-[32px_12px_48px] flex flex-col gap-3
+  @apply w-full p-[32px_12px_100px] flex flex-col gap-3
 }
 .my-item-list .item{
   @apply w-full bg-white border-[1px] border-[#dbdbdb] rounded-[10px] shadow-itemList p-[20px_24px] flex justify-between items-center
@@ -22,10 +22,10 @@
 }
 
 #itemSetting .btn-box{
-  @apply w-full flex justify-center px-3
+  @apply w-full flex justify-center fixed bottom-0 left-0 max-w-[425px] lg:left-1/2 lg:ml-[-213px]
 }
 #itemSetting .btn-box button{
-  @apply w-full flex justify-center items-center h-[56px] gap-[15px] text-[16px] font-ibm font-semibold text-white bg-[#495062]
+  @apply w-full flex justify-center items-center h-[60px] gap-3 text-[16px] font-ibm font-semibold text-white bg-[#495062]
 }
 
 #itemSetting .visual{

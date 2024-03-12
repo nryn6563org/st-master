@@ -46,3 +46,13 @@
 .signalAlmList > div .signal .info .price{
   @apply text-[12px] text-[#0c0c20] font-semibold
 }
+
+.emptyBox{
+  @apply my-9 mx-3 py-6 flex flex-col justify-center items-center gap-2 border-[2px] border-[#0c0c20] rounded-[10px]
+}
+.emptyBox strong{
+  @apply w-full text-[20px] text-[#0c0c20] font-bold text-center
+}
+.emptyBox span{
+  @apply text-[18px] text-[#0c0c20] font-medium w-full text-center
+}

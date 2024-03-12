@@ -539,6 +539,13 @@
           <!--  -->
         </div>
         <!-- 시그널 알림 히스토리 -->
+
+        <div class="emptyBox">
+          <strong class="">시그널 발생 내역이 없습니다.</strong>
+          <span>
+            종목을 추가하시면 실시간 매수, 매도 시그널 <br>알림을 보내드립니다.
+          </span>
+        </div>
       </template>
 
       <template #footer> </template>

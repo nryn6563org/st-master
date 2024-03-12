@@ -27,6 +27,9 @@ body.modal-open{
 #container.sub{
   @apply min-h-[calc(100%-186px)]
 }
+#container.setting{
+  @apply h-[calc(100%-62px)] overflow-y-auto
+}
 .content{
   @apply w-full
 }

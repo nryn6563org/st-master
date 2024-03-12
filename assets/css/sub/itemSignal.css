@@ -18,8 +18,8 @@
   @apply block mt-4 text-[14px] leading-[16px] font-medium text-black
 }
 #myItemSignalGuide .btn-box{
-  @apply w-full mt-[84px] flex justify-center
+  @apply w-full flex justify-center absolute bottom-0 left-0
 }
 #myItemSignalGuide .btn-box button{
-  @apply w-[240px] h-[56px] rounded-full gap-[6px] text-[16px] font-semibold
+  @apply w-full h-[60px] gap-3 text-[20px] font-bold font-ibm text-white bg-[#FF505A]
 }
