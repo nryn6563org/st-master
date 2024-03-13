@@ -385,4 +385,5 @@ export default {
 </script>
 <style scoped>
 @import "~/assets/css/sub/itemSetting.css";
+@import "~/assets/css/sub/itemSearch.css";
 </style>
