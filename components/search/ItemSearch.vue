@@ -109,7 +109,7 @@ export default {
         const inputRect = inputElement.getBoundingClientRect()
 
         // 화면 상단으로 스크롤
-        document.querySelector('.modal-body').scrollTo({
+        document.querySelector('#itemSetting .top').scrollTo({
           top: inputRect.top - 62,
           behavior: 'smooth' // 부드러운 스크롤링을 위해 'auto' 또는 'smooth'를 사용할 수 있습니다.
         })

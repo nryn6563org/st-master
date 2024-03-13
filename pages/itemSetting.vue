@@ -2,7 +2,7 @@
   <div id="container" class="setting">
     <div id="itemSetting">
       <div class="top">
-        <SearchModal />
+        <ItemSearch></ItemSearch>
       </div>
       <!-- top -->
 
@@ -364,10 +364,10 @@
   </div>
 </template>
 <script>
-import SearchModal from '~/components/modal/SearchModal'
+import ItemSearch from '~/components/search/ItemSearch'
 export default {
   components: {
-    SearchModal
+    ItemSearch
   },
   layout: 'itemLayout',
   asyncData({ store }) {

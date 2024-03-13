@@ -45,7 +45,7 @@
   @apply text-[12px] font-[600]
 }
 .signal-list-w .list .per span em{
-  @apply text-[16px] font-[900] 
+  @apply text-[16px] font-[900]
 }
 .signal-list-w .list .price{
   @apply block mt-[9px] leading-[12px] text-[12px] text-[#0c0c20] font-semibold
@@ -59,4 +59,17 @@
 }
 .signal-tab-content .caution .text{
   @apply text-[12px] text-[#919bab] font-medium min-h-3 leading-3
+}
+
+.emptySignal{
+  @apply flex flex-col items-center w-full pt-6
+}
+.emptySignal > div{
+  @apply flex flex-col items-center w-full
+}
+.emptySignal strong{
+  @apply block text-center w-full leading-6 text-[20px] font-bold text-[#0c0c20]
+}
+.emptySignal span{
+  @apply block text-center pt-2 leading-4 text-[16px] font-medium text-[#0c0c20]
 }

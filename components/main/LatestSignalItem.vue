@@ -52,6 +52,22 @@
         <SignalContent id="tab02" v-show="activeTab === 'buy'"></SignalContent>
         <!-- 매수 시그널 -->
 
+        <div class="emptySignal">
+          <div class="noSiganlTime">
+            <strong>데이터가 없는 시간대입니다.</strong>
+            <span>영업일 오전 8시~9시 20분 데이터가 리셋되는 시간</span>
+          </div>
+<!--          <div class="beforeMarket">-->
+<!--            <strong>장 시작 전입니다.</strong>-->
+<!--          </div>-->
+<!--          <div class="signalAnalySis">-->
+<!--            <strong>실시간 시그널이 분석중입니다.</strong>-->
+<!--          </div>-->
+          <!--
+          div 는 임의로 묶어놓은 부분, div 없이 strong//span만 사용하여도 상관없음
+          -->
+        </div>
+
         <div class="caution">
           <span class="bullet">
             <svg

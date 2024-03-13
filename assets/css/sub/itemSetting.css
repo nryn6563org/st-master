@@ -2,12 +2,21 @@
   @apply w-full relative h-full
 }
 #itemSetting .top{
-  @apply bg-[#ffe500] w-full pt-1 pb-4 flex justify-center
+  @apply bg-[#ffe500] w-full pt-[7px] pb-6 flex justify-center
 }
 #itemSetting .top > .additem > button{
   @apply h-[48px] w-[280px] flex justify-center items-center rounded-full bg-[#495062] gap-3 text-[16px] font-ibm font-semibold text-[#ffe500]
 }
-
+#itemSetting .top > .inputArea{
+  @apply w-full px-7 relative
+}
+#itemSetting .top > .inputArea input{
+  @apply w-full h-[64px] border-[3px] border-[#0c0c20] rounded-full bg-white p-[0_48px_0_24px] text-[16px] text-[#FF505A] font-semibold
+  placeholder:text-[14px] placeholder:font-semibold placeholder:text-[#919bab]
+}
+#itemSetting .top > .inputArea button{
+  @apply absolute top-4 right-[44px] z-20
+}
 .my-item-list{
   @apply w-full p-[32px_12px_100px] flex flex-col gap-3
 }
