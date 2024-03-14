@@ -16,7 +16,7 @@
   @apply w-full text-center text-[14px] text-[#0C0C20]
 }
 #sub_header{
-  @apply w-full h-[62px] bg-[#FFE500] p-[16px_12px] flex gap-3 items-center sticky top-0 z-[90]
+  @apply w-full h-[62px] bg-[#FFE500] p-[16px_12px] flex gap-3 items-center sticky top-0 z-40
 }
 #sub_header .back{}
 #sub_header .page-title{
