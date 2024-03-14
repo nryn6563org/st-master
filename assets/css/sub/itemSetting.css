@@ -1,10 +1,10 @@
 #itemSetting{
   @apply w-full relative h-full
 }
-#itemSetting .top{
+#itemSetting > .top{
   @apply bg-[#ffe500] w-full pt-[7px] pb-6 flex justify-center sticky top-0 z-50
 }
-#itemSetting .top > .additem > button{
+#itemSetting > .top > .additem > button{
   @apply h-[48px] w-[280px] flex justify-center items-center rounded-full bg-[#495062] gap-3 text-[16px] font-ibm font-semibold text-[#ffe500]
 }
 #itemSetting .top > .inputArea{
