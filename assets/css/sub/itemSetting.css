@@ -31,7 +31,7 @@
 }
 
 #itemSetting .btn-box{
-  @apply w-full flex justify-center fixed bottom-0 left-0 max-w-[425px] md:left-1/2 md:ml-[-213px]
+  @apply w-full flex justify-center fixed bottom-0 left-0 max-w-[425px] smd:left-1/2 smd:ml-[-213px]
 }
 #itemSetting .btn-box button{
   @apply w-full flex justify-center items-center h-[60px] gap-3 text-[16px] font-ibm font-semibold text-white bg-[#495062]

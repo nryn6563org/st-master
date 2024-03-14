@@ -12,6 +12,7 @@ module.exports = {
       infoList: ['0px 2px 5px 0px rgba(0, 0, 0, 0.10)']
     },
     screens: {
+      smd: '425px',
       md: '768px',
       lg: '1024px'
     }
