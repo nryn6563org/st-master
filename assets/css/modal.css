@@ -1,5 +1,5 @@
 .modal {
-  @apply fixed w-full h-full flex justify-center items-center inset-0 bg-black bg-opacity-80 z-20
+  @apply fixed w-full h-full flex justify-center items-center inset-0 bg-black bg-opacity-80 z-[999]
   md:max-w-[425px] md:left-1/2 md:ml-[-213px]
 }
 .modal-content {
@@ -35,7 +35,7 @@
   @apply w-full bg-white py-10 px-2.5
 }
 .alertModal .modal-content .modal-footer{
-  @apply w-full 
+  @apply w-full
 }
 .alertModal .modal-content .modal-footer .btn-group{
   @apply flex h-[56px]
