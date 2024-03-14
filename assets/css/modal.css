@@ -9,6 +9,9 @@
 .modal.itemSearch {
   @apply bg-transparent;
 }
+.itemSearch .modal-header{
+  @apply static
+}
 .itemSearch .modal-content {
   @apply w-full h-full rounded-none justify-start;
 }

@@ -21,15 +21,16 @@ body.modal-open{
 #container{
   @apply min-h-[calc(100%-212px)] bg-[#f0f0f0] w-full
 }
+#container.setting{
+  @apply min-h-[calc(100%-62px)]
+}
 #container.page{
   @apply min-h-[calc(100%-171px)]
 }
 #container.sub{
   @apply min-h-[calc(100%-186px)]
 }
-#container.setting{
-  @apply h-[calc(100%-62px)] overflow-y-auto
-}
+
 .content{
   @apply w-full
 }
