@@ -43,7 +43,7 @@
 }
 
 .autocomplete {
-  @apply bg-white z-40 mt-2 shadow-itemList rounded-[10px] border-[2px] border-[#0c0c20] p-6 max-h-[234px] h-[234px] overflow-y-auto flex flex-col gap-6 !important
+  @apply bg-white z-[999] mt-2 shadow-itemList rounded-[10px] border-[2px] border-[#0c0c20] p-6 max-h-[234px] h-[234px] overflow-y-auto flex flex-col gap-6 !important
 }
 .autocomplete > div{
   @apply w-full flex h-[18px] gap-2 items-center
