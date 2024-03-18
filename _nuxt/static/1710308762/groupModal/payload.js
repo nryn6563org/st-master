@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/groupModal", {data:[{}],fetch:{},mutations:[]});
