@@ -36,20 +36,17 @@
           <span> <em>싸게</em> 사고, <em>비싸게</em> 팔기!! </span>
         </strong>
         <span>
-          지금, 수익내는 매매시점이 궁금한 <br />
-          종목을 등록해 보세요.
+          종목을 추가하면 <em>매수/매도 <br>시그널</em>을 받으실 수 있습니다.
         </span>
       </div>
       <!-- 가이드 텍스트 -->
 
       <div class="btn-box">
         <button class="btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12.0601 16.5V11.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M14.5 14H9.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M22 11V17C22 21 21 22 17 22H7C3 22 2 21 2 17V7C2 3 3 2 7 2H8.5C10 2 10.33 2.44 10.9 3.2L12.4 5.2C12.78 5.7 13 6 14 6H17C21 6 22 7 22 11Z" stroke="white" stroke-width="2" stroke-miterlimit="10" />
-          </svg>
           나의 종목 추가하기
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.390524 0.390524C0.911223 -0.130175 1.75544 -0.130175 2.27614 0.390524L9.60948 7.72386C10.1302 8.24456 10.1302 9.08878 9.60948 9.60948L2.27614 16.9428C1.75544 17.4635 0.911223 17.4635 0.390524 16.9428C-0.130175 16.4221 -0.130175 15.5779 0.390524 15.0572L6.78105 8.66667L0.390524 2.27614C-0.130175 1.75544 -0.130175 0.911223 0.390524 0.390524Z" fill="white" />
+          </svg>
         </button>
       </div>
     </div>

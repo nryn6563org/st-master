@@ -15,7 +15,10 @@
   @apply font-bold
 }
 #myItemSignalGuide .vi_txt span{
-  @apply block mt-4 text-[14px] leading-[16px] font-medium text-black
+  @apply block mt-4 text-[16px] leading-[20px] font-medium text-black
+}
+#myItemSignalGuide .vi_txt span em{
+  @apply font-[800] underline
 }
 #myItemSignalGuide .btn-box{
   @apply w-full flex justify-center absolute bottom-0 left-0
