@@ -1,5 +1,5 @@
 #myItemSignalGuide{
-  @apply relative w-full h-[348px] p-[20px_12px] bg-[#FFE500] bg-[url('~/assets/img/s_vi01.svg')] bg-no-repeat bg-[length:160px_134px] bg-[209px_142px]
+  @apply relative w-full h-[348px] p-[20px_12px] bg-[#FFE500] bg-[url('~/assets/img/s_vi01.svg')] bg-no-repeat bg-[length:160px_134px] bg-[260px_142px]
 }
 #myItemSignalGuide .vi_txt{
   @apply mt-[30px] w-full px-3
